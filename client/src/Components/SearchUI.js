@@ -1,6 +1,6 @@
 import React from "react";
 
-function SearchBox() {
+function SearchUI() {
     return (
         <div id='searchbox'>
 
@@ -8,4 +8,4 @@ function SearchBox() {
     )
 }
 
-export default SearchBox;
+export default SearchUI;
