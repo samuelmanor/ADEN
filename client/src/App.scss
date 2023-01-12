@@ -12,6 +12,8 @@ $rubik: 'Rubik Mono One', sans-serif;
 
 body {
     background-color: $offwhite;
+    font-family: $epilogue;
+
     user-select: none;
     cursor: default;
 }
@@ -42,7 +44,7 @@ body {
         font-family: $rubik;
         color: transparent;
         -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-color: $border;
     }
 }
 
@@ -62,7 +64,45 @@ body {
     -webkit-animation: gradient 10s ease infinite;
 
     form {
-        
+        text-align: center;
+        color: $offwhite;
+        font-size: 60px;
+    }
+
+    select {
+        cursor: pointer;
+
+        color: $offwhite;
+        font-size: 40px;
+
+        appearance: none;
+        background-color: transparent;
+        border-radius: 0;
+        border: none;
+        border-bottom: 2px solid $offwhite;
+        margin-top: 85px;
+
+        text-align-last: right;
+        padding-right: 10px;
+
+    }
+
+    .selected {
+        font-size: 60px;
+        text-align-last: left;
+        margin-top: 65px;
+    }
+
+    #identitydropdown {
+        width: 610px;
+    }
+
+    #servicedropdown {
+        width: 500px;
+    }
+
+    #locationdropdown {
+        width: 590px;
     }
 }
 
