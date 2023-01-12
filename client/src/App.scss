@@ -1,6 +1,92 @@
+// colors:
 $offwhite: #f7f7f2;
 $lightpink: #f0a8ad;
 $darkpink: #ea858c;
 $lightblue: #72a8d5;
 $darkblue: #5295cb;
 $border: #0d1821;
+
+// fonts:
+$epilogue: 'Epilogue', sans-serif;
+$rubik: 'Rubik Mono One', sans-serif;
+
+body {
+    background-color: $offwhite;
+    user-select: none;
+    cursor: default;
+}
+
+#header {
+    width: 80%;
+    height: 100px;
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-bottom: 1px solid $border;
+
+    .headertab {
+        padding-top: 30px;
+        font-size: 28px;
+
+        cursor: pointer;
+    }
+
+    #title {
+        font-size: 60px;
+        font-family: $rubik;
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+    }
+}
+
+#searchbox {
+    width: 70%;
+    height: 500px;
+
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 150px;
+    left: 0;
+    right: 0;
+
+    background: linear-gradient(-45deg, $darkpink, $lightpink, $lightblue, $darkblue);
+    background-size: 250% 250%;
+    animation: gradient 10s ease infinite;
+    -webkit-animation: gradient 10s ease infinite;
+
+    form {
+        
+    }
+}
+
+// animations:
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

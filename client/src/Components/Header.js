@@ -9,9 +9,9 @@ function Header() {
     }
     return (
         <div id='header'>
-            <div className='headtab'>about</div>
-            <div className='headtab' id='title'>ADEN</div>
-            <div className='headtab' onClick={displayLoginUI}>log in</div>
+            <div className='headertab'>about</div>
+            <div className='headertab' id='title'>ADEN</div>
+            <div className='headertab' onClick={displayLoginUI}>log in</div>
 
             {showLoginUI ? <LoginUI /> : null}
         </div>
