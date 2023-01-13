@@ -9,24 +9,28 @@ function SearchUI() {
         e.target.className = 'selected';
     }
 
+    // each <select>'s onClick runs getValue(e) and getQuery('identity/service/location')
 
     function getValue(e) {
         return parseInt(e.currentTarget.value);
     }
 
     function getQuery() { 
-
+        // switch statement to find which part of query is being changed
+        // if all 3 vals in searchQuery != 0, run handleSelection via useEffect
     }
 
     function handleSelection() {
 
     }
 
+    // onClick={() => {func1(); func2();}}
+
     return (
         <div id='searchbox'>
             <form id='filterform'>
                     <label htmlFor='identityselect'>I am </label>
-                    <select name='identityselect' className='filterdropdown' id='identitydropdown' onInput={correctSelectStyle} onChange={handleSelection()}>
+                    <select name='identityselect' className='filterdropdown' id='identitydropdown' onInput={correctSelectStyle} onChange={handleSelection()}> 
                         <option value='' disabled selected>▼</option>
                         <option value='1'>transfeminine</option>
                         <option value='2'>transmasculine</option>
