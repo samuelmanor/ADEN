@@ -1,20 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function SearchUI() {
+    const [searchQuery, setSearchQuery] = useState([0, 0, 0]); // identity | service | location
+
+    useEffect(() => { console.log('current search query:', searchQuery)}, [searchQuery])
 
     function correctSelectStyle(e) {
         e.target.className = 'selected';
     }
 
-    function handleSelection(e) { // eventually 'type' goes in parenthesis
-        correctSelectStyle(e);
+
+    function getValue(e) {
+        return parseInt(e.currentTarget.value);
+    }
+
+    function getQuery() { 
+
+    }
+
+    function handleSelection() {
+
     }
 
     return (
         <div id='searchbox'>
             <form id='filterform'>
                     <label htmlFor='identityselect'>I am </label>
-                    <select name='identityselect' className='filterdropdown' id='identitydropdown' onChange={handleSelection}>
+                    <select name='identityselect' className='filterdropdown' id='identitydropdown' onInput={correctSelectStyle} onChange={handleSelection()}>
                         <option value='' disabled selected>▼</option>
                         <option value='1'>transfeminine</option>
                         <option value='2'>transmasculine</option>
@@ -23,7 +35,7 @@ function SearchUI() {
                     <br />
 
                     <label htmlFor='serviceselect'>seeking </label>
-                    <select name='serviceselect' className='filterdropdown' id='servicedropdown' onChange={handleSelection}>
+                    <select name='serviceselect' className='filterdropdown' id='servicedropdown' onInput={correctSelectStyle} onChange={handleSelection()}>
                         <option value='' disabled selected>▼</option>
                         <option value='1'>hormones</option>
                         <option value='2'>therapy</option>
@@ -33,7 +45,7 @@ function SearchUI() {
                     <br />
 
                     <label htmlFor='locationselect'>near </label>
-                    <select name='locationselect' className='filterdropdown' id='locationdropdown' onChange={handleSelection}>
+                    <select name='locationselect' className='filterdropdown' id='locationdropdown' onInput={correctSelectStyle} onChange={handleSelection()}>
                         <option value='' disabled selected>▼</option>
                         <option value='1'>traverse city</option>
                         <option value='2'>lansing</option>
@@ -48,3 +60,17 @@ function SearchUI() {
 }
 
 export default SearchUI;
+
+        // let newQuery = searchQuery;
+        // switch (type) {
+        //     case 'identity':
+        //         // newQuery[1] = parseInt(e.currentTarget.value);
+        //         // setSearchQuery(newQuery);
+        //         break;
+        //     case 'service':
+        //         // console.log('service activated');
+        //         break;
+        //     case 'location':
+        //         // console.log('location activated');
+        //         break;
+        // }

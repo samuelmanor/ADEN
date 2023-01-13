@@ -29,8 +29,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 10;
 
     border-bottom: 1px solid $border;
+    background-color: $offwhite;
 
     .headertab {
         padding-top: 30px;
