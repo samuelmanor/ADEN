@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
+import ListingPage from "./ListingPage";
 
 function SearchUI() {
     const [searchQuery, setSearchQuery] = useState({identity: 0, service: 0, location: 0});
 
-    useEffect(() => {console.log('current query', searchQuery)}, [searchQuery]);
+    // useEffect(() => {console.log('current query', searchQuery)});
 
     function correctSelectStyle(e) {
         e.target.className = 'selected';
@@ -12,11 +13,11 @@ function SearchUI() {
     function handleSelection(e) {
         let query = searchQuery;
         query[e.target.id] = parseInt(e.currentTarget.value);
-        console.log(query);
+        setSearchQuery(query);
     }
 
     function handleSearch() {
-
+        
     }
 
     return (
@@ -52,22 +53,9 @@ function SearchUI() {
                         <option value='6'>grand rapids</option>
                     </select>
                 </form>
+                <button onClick={handleSearch()}>search</button>
         </div>
     )
 }
 
 export default SearchUI;
-
-        // let newQuery = searchQuery;
-        // switch (type) {
-        //     case 'identity':
-        //         // newQuery[1] = parseInt(e.currentTarget.value);
-        //         // setSearchQuery(newQuery);
-        //         break;
-        //     case 'service':
-        //         // console.log('service activated');
-        //         break;
-        //     case 'location':
-        //         // console.log('location activated');
-        //         break;
-        // }
