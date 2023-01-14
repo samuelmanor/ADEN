@@ -1,36 +1,29 @@
 import React, { useState, useEffect } from "react";
 
 function SearchUI() {
-    const [searchQuery, setSearchQuery] = useState([0, 0, 0]); // identity | service | location
+    const [searchQuery, setSearchQuery] = useState({identity: 0, service: 0, location: 0});
 
-    useEffect(() => { console.log('current search query:', searchQuery)}, [searchQuery])
+    useEffect(() => {console.log('current query', searchQuery)}, [searchQuery]);
 
     function correctSelectStyle(e) {
         e.target.className = 'selected';
     }
 
-    // each <select>'s onClick runs getValue(e) and getQuery('identity/service/location')
-
-    function getValue(e) {
-        return parseInt(e.currentTarget.value);
+    function handleSelection(e) {
+        let query = searchQuery;
+        query[e.target.id] = parseInt(e.currentTarget.value);
+        console.log(query);
     }
 
-    function getQuery() { 
-        // switch statement to find which part of query is being changed
-        // if all 3 vals in searchQuery != 0, run handleSelection via useEffect
-    }
-
-    function handleSelection() {
+    function handleSearch() {
 
     }
-
-    // onClick={() => {func1(); func2();}}
 
     return (
         <div id='searchbox'>
             <form id='filterform'>
                     <label htmlFor='identityselect'>I am </label>
-                    <select name='identityselect' className='filterdropdown' id='identitydropdown' onInput={correctSelectStyle} onChange={handleSelection()}> 
+                    <select name='identityselect' className='filterdropdown' id='identity' onInput={correctSelectStyle} onChange={handleSelection}> 
                         <option value='' disabled selected>▼</option>
                         <option value='1'>transfeminine</option>
                         <option value='2'>transmasculine</option>
@@ -39,7 +32,7 @@ function SearchUI() {
                     <br />
 
                     <label htmlFor='serviceselect'>seeking </label>
-                    <select name='serviceselect' className='filterdropdown' id='servicedropdown' onInput={correctSelectStyle} onChange={handleSelection()}>
+                    <select name='serviceselect' className='filterdropdown' id='service' onInput={correctSelectStyle} onChange={handleSelection}>
                         <option value='' disabled selected>▼</option>
                         <option value='1'>hormones</option>
                         <option value='2'>therapy</option>
@@ -49,7 +42,7 @@ function SearchUI() {
                     <br />
 
                     <label htmlFor='locationselect'>near </label>
-                    <select name='locationselect' className='filterdropdown' id='locationdropdown' onInput={correctSelectStyle} onChange={handleSelection()}>
+                    <select name='locationselect' className='filterdropdown' id='location' onInput={correctSelectStyle} onChange={handleSelection}>
                         <option value='' disabled selected>▼</option>
                         <option value='1'>traverse city</option>
                         <option value='2'>lansing</option>

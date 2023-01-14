@@ -41,7 +41,7 @@ body {
         cursor: pointer;
     }
 
-    #title {
+    #title { // gradient animation on hover?
         font-size: 60px;
         font-family: $rubik;
         color: transparent;
@@ -95,15 +95,15 @@ body {
         margin-top: 65px;
     }
 
-    #identitydropdown {
+    #identity {
         width: 610px;
     }
 
-    #servicedropdown {
+    #service {
         width: 500px;
     }
 
-    #locationdropdown {
+    #location {
         width: 590px;
     }
 }
