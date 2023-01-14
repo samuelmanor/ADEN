@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
-import ListingPage from "./ListingPage";
 
 function SearchUI() {
     const [searchQuery, setSearchQuery] = useState({identity: 0, service: 0, location: 0});
-
-    // useEffect(() => {console.log('current query', searchQuery)});
 
     function correctSelectStyle(e) {
         e.target.className = 'selected';
@@ -16,8 +13,13 @@ function SearchUI() {
         setSearchQuery(query);
     }
 
-    function handleSearch() {
-        
+    function handleSearch(e) {
+        console.log(searchQuery);
+        if (Object.values(searchQuery).every(p => p)) {
+            console.log('valid');
+        } else {
+            e.target.innerText = 'please fill out all 3 fields!'
+        }
     }
 
     return (
@@ -53,7 +55,7 @@ function SearchUI() {
                         <option value='6'>grand rapids</option>
                     </select>
                 </form>
-                <button onClick={handleSearch()}>search</button>
+                <button onClick={handleSearch}>search</button>
         </div>
     )
 }
