@@ -1,6 +1,6 @@
 import React from "react";
 
-function ListingPage({ query }) {
+function ListingContainer() {
     return (
         <div id='listingpage'>
 
@@ -8,4 +8,4 @@ function ListingPage({ query }) {
     )
 }
 
-export default ListingPage;
+export default ListingContainer;
