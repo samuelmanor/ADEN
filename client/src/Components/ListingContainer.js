@@ -2,8 +2,8 @@ import React from "react";
 
 function ListingContainer() {
     return (
-        <div id='listingpage'>
-
+        <div id='listingcontainer'>
+            <p>lorem ipsum</p>
         </div>
     )
 }

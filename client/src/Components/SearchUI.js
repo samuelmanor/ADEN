@@ -1,26 +1,41 @@
 import React, { useState, useEffect } from "react";
+import ListingContainer from "./ListingContainer";
 
 function SearchUI() {
     const [searchQuery, setSearchQuery] = useState({identity: 0, service: 0, location: 0});
+    const [listings, setListings] = useState([]);
+
+    function getListings() {
+        fetch(`http://localhost:3000/listings/`)
+        .then((r) => r.json())
+        .then((listingsArray) => {
+            console.log(listingsArray);
+            // setListings(listingsArray);
+        })
+    }
+
+    useEffect(() => {
+        if (Object.values(searchQuery).every(p => p)) {
+            getListings();
+        } else {
+            console.log('invalid', searchQuery);
+        }
+    }, [searchQuery])
 
     function correctSelectStyle(e) {
         e.target.className = 'selected';
     }
 
     function handleSelection(e) {
-        let query = searchQuery;
+        let query = {...searchQuery};
         query[e.target.id] = parseInt(e.currentTarget.value);
         setSearchQuery(query);
     }
 
-    function handleSearch(e) {
-        console.log(searchQuery);
-        if (Object.values(searchQuery).every(p => p)) {
-            console.log('valid');
-        } else {
-            e.target.innerText = 'please fill out all 3 fields!'
-        }
-    }
+    // function handleSearch(e) {
+    //     console.log(searchQuery);
+    //     e.preventDefault();
+    // }
 
     return (
         <div id='searchbox'>
@@ -55,10 +70,10 @@ function SearchUI() {
                         <option value='6'>grand rapids</option>
                     </select>
 
-                    <button type='submit' onClick={handleSearch}>search</button>
+                    {/* <button type='submit' onClick={handleSearch}>search</button> */}
                 </form>
-                {/* make this into submit button on form */}
-                {/* <button onClick={handleSearch}>search</button> */}
+
+                {/* <ListingContainer /> */}
         </div>
     )
 }
