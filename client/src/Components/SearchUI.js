@@ -6,7 +6,7 @@ function SearchUI() {
     const [listings, setListings] = useState([]);
 
     function getListings() {
-        fetch(`http://localhost:3000/listings/`)
+        fetch(`http://localhost:3000/listings?identity_id=3&service_id=${searchQuery.service}&location_id=${searchQuery.location}`)
         .then((r) => r.json())
         .then((listingsArray) => {
             console.log(listingsArray);

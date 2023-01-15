@@ -14876,3 +14876,519 @@ Processing by ListingsController#index as */*
 Completed 200 OK in 56ms (Views: 48.3ms | ActiveRecord: 3.5ms | Allocations: 65730)
 
 
+Started GET "/listings/" for ::1 at 2023-01-14 21:15:07 -0500
+Processing by ListingsController#index as */*
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 4]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 4]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 5]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 5]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 6]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 6]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 7]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 7]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 8]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 8]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 9]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 9]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 10]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 10]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 11]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 11]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 12]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 12]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.4ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 13]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 13]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 14]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 14]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 15]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 15]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 16]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 16]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 17]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 17]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 18]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 18]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (69.67ms)
+Completed 200 OK in 73ms (Views: 69.5ms | ActiveRecord: 2.7ms | Allocations: 42447)
+
+
+Started GET "/listings/" for ::1 at 2023-01-14 21:16:50 -0500
+Processing by ListingsController#index as */*
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 4]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 4]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 5]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 5]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 6]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 6]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 7]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 7]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 8]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 8]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 9]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 9]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 10]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 10]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 11]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 11]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 12]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 12]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 13]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 13]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 14]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 14]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 15]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 15]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 16]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 16]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 17]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 17]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 18]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 18]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (20.66ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 1.1ms | Allocations: 42447)
+
+
+Started GET "/listings/" for ::1 at 2023-01-14 21:16:53 -0500
+Processing by ListingsController#index as */*
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 4]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 4]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 5]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 5]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 6]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 6]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 7]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 7]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 8]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 8]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 9]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 9]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 10]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 10]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 11]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 11]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 12]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 12]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 13]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 13]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 14]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 14]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 15]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 15]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 16]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 16]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 17]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 17]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 18]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 18]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (48.68ms)
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 2.9ms | Allocations: 42421)
+
+
+Started GET "/listings?identity_id=3&service_id=undefined&location_id=undefined" for ::1 at 2023-01-14 21:17:29 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"undefined", "location_id"=>"undefined"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", nil], ["location_id", nil]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.03ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/listings?identity_id=3&service_id=undefined&location_id=undefined" for ::1 at 2023-01-14 21:17:37 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"undefined", "location_id"=>"undefined"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", nil], ["location_id", nil]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 943)
+
+
+Started GET "/listings?identity_id=3&service_id=undefined&location_id=undefined" for ::1 at 2023-01-14 21:17:45 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"undefined", "location_id"=>"undefined"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", nil], ["location_id", nil]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.03ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 923)
+
+
+Started GET "/listings?identity_id=3&service_id=undefined&location_id=undefined" for ::1 at 2023-01-14 21:17:47 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"undefined", "location_id"=>"undefined"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", nil], ["location_id", nil]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.09ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 922)
+
+
+Started GET "/listings?identity_id=3" for ::1 at 2023-01-14 21:18:09 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3"}
+  [1m[36mListing Load (1.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?)[0m  [[nil, 3], [nil, 3]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 4]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 4]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 5]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 5]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 6]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 6]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 7]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 7]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 8]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 8]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 9]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 9]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 10]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 10]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 11]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 11]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 12]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 12]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 13]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 13]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 14]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 14]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 15]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 15]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 16]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 16]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 17]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 17]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 18]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 18]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.81ms)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 2.8ms | Allocations: 42515)
+
+
+Started GET "/listings?identity_id=3&service_id=undefined" for ::1 at 2023-01-14 21:18:43 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"undefined"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", nil]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.03ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 873)
+
+
+Started GET "/listings?identity_id=3&service_id=1&location_id=1" for ::1 at 2023-01-14 21:19:36 -0500
+Processing by ListingsController#index as HTML
+  Parameters: {"identity_id"=>"3", "service_id"=>"1", "location_id"=>"1"}
+  [1m[36mListing Load (1.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", 1], ["location_id", 1]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.5ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 1.7ms | Allocations: 3691)
+
+
+Started GET "/listings?identity_id=3&service_id=1&location_id=1" for ::1 at 2023-01-14 21:19:45 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"1", "location_id"=>"1"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", 1], ["location_id", 1]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.9ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 3671)
+
+
+Started GET "/listings?identity_id=3&service_id=1&location_id=1" for ::1 at 2023-01-14 21:19:53 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"1", "location_id"=>"1"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", 1], ["location_id", 1]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.23ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.8ms | Allocations: 3673)
+
+
+Started GET "/listings?identity_id=3&service_id=3&location_id=1" for ::1 at 2023-01-14 21:21:39 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"3", "location_id"=>"1"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", 3], ["location_id", 1]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.03ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 922)
+
+
+Started GET "/listings?identity_id=3&service_id=1&location_id=1" for ::1 at 2023-01-14 21:22:37 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"1", "location_id"=>"1"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", 1], ["location_id", 1]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.49ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.6ms | Allocations: 3671)
+
+
+Started GET "/listings?identity_id=3&service_id=2&location_id=1" for ::1 at 2023-01-14 21:22:44 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"2", "location_id"=>"1"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", 2], ["location_id", 1]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 9]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 9]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 10]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 10]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.16ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.7ms | Allocations: 4922)
+
+

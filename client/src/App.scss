@@ -82,7 +82,7 @@ body {
         border-radius: 0;
         border: none;
         border-bottom: 2px solid $offwhite;
-        margin-top: 80px;
+        margin-top: 85px;
 
         text-align-last: right;
         padding-right: 10px;
@@ -107,22 +107,22 @@ body {
         width: 590px;
     }
 
-    button {
-        display: block;
-        margin: 0 auto;
-        margin-top: 35px;
-        cursor: pointer;
+    // button {
+    //     display: block;
+    //     margin: 0 auto;
+    //     margin-top: 35px;
+    //     cursor: pointer;
 
-        border: none;
-        background-color: transparent;
-        color: $offwhite;
-        font-family: $epilogue;
-        font-size: 30px;
-    }
+    //     border: none;
+    //     background-color: transparent;
+    //     color: $offwhite;
+    //     font-family: $epilogue;
+    //     font-size: 30px;
+    // }
 
-    button:hover {
-        border-bottom: 2px solid $offwhite;
-    }
+    // button:hover {
+    //     border-bottom: 2px solid $offwhite;
+    // }
 }
 
 // animations:
