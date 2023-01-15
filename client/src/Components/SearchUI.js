@@ -54,8 +54,11 @@ function SearchUI() {
                         <option value='5'>detroit</option>
                         <option value='6'>grand rapids</option>
                     </select>
+
+                    <button type='submit' onClick={handleSearch}>search</button>
                 </form>
-                <button onClick={handleSearch}>search</button>
+                {/* make this into submit button on form */}
+                {/* <button onClick={handleSearch}>search</button> */}
         </div>
     )
 }
