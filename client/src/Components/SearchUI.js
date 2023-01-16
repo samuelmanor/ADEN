@@ -10,7 +10,7 @@ function SearchUI() {
         .then((r) => r.json())
         .then((listingsArray) => {
             console.log(listingsArray);
-            // setListings(listingsArray);
+            setListings(listingsArray);
         })
     }
 
@@ -31,11 +31,6 @@ function SearchUI() {
         query[e.target.id] = parseInt(e.currentTarget.value);
         setSearchQuery(query);
     }
-
-    // function handleSearch(e) {
-    //     console.log(searchQuery);
-    //     e.preventDefault();
-    // }
 
     return (
         <div id='searchbox'>
@@ -73,6 +68,7 @@ function SearchUI() {
                     {/* <button type='submit' onClick={handleSearch}>search</button> */}
                 </form>
 
+                {/* eventually this'll be something like {listings ? <ListingContainer /> : null} */}
                 {/* <ListingContainer /> */}
         </div>
     )
