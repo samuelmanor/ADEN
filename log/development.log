@@ -15414,3 +15414,10 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 12ms (Views: 11.0ms | Allocations: 712)
 
 
+Started GET "/" for ::1 at 2023-01-17 17:13:46 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/smanor/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/smanor/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 7)
+Completed 200 OK in 9ms (Views: 7.0ms | Allocations: 232)
+
+

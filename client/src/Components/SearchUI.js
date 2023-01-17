@@ -6,6 +6,7 @@ function SearchUI() {
     const [listings, setListings] = useState([]);
 
     function getListings() {
+        // the variable for identity_id is static because all entries in db have an identity_id of 3
         fetch(`http://localhost:3000/listings?identity_id=3&service_id=${searchQuery.service}&location_id=${searchQuery.location}`)
         .then((r) => r.json())
         .then((listingsArray) => {
