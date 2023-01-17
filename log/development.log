@@ -15392,3 +15392,25 @@ Processing by ListingsController#index as */*
 Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.7ms | Allocations: 4922)
 
 
+Started GET "/" for ::1 at 2023-01-15 22:51:20 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/smanor/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/smanor/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.3ms | Allocations: 294)
+Completed 200 OK in 9ms (Views: 5.6ms | Allocations: 2268)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2023-01-15 22:51:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  
+Started GET "/apple-touch-icon.png" for ::1 at 2023-01-15 22:51:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  
+Started GET "/" for ::1 at 2023-01-15 22:51:45 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/smanor/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/smanor/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.0ms | Allocations: 178)
+Completed 200 OK in 12ms (Views: 11.0ms | Allocations: 712)
+
+

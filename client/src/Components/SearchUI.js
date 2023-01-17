@@ -64,8 +64,6 @@ function SearchUI() {
                         <option value='5'>detroit</option>
                         <option value='6'>grand rapids</option>
                     </select>
-
-                    {/* <button type='submit' onClick={handleSearch}>search</button> */}
                 </form>
 
                 {/* eventually this'll be something like {listings ? <ListingContainer /> : null} */}
