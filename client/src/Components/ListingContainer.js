@@ -2,6 +2,21 @@ import React from "react";
 import ListingSmall from "./ListingSmall";
 
 function ListingContainer({ searchText, listings }) {
+    let listingCards = listings.map((listing) => {
+        return (
+            <ListingSmall 
+                key={listing.id}
+                id={listing.id}
+                name={listing.name}
+                address={listing.address}
+                description={listing.description}
+                website={listing.website}
+                phone={listing.phone}
+                comments={listing.comments}
+            />
+        )
+    })
+
     return (
         <div id='listingcontainer'>
             <h1>results for</h1>
@@ -10,19 +25,7 @@ function ListingContainer({ searchText, listings }) {
             </div>
 
             <div id='listingsmallcontainer'>
-                {/* temp solution until props are handed down to here from searchui */}
-                <ListingSmall />
-                <ListingSmall />
-                <ListingSmall />
-                <ListingSmall />
-                <ListingSmall />
-                <ListingSmall />
-                <ListingSmall />
-                <ListingSmall />
-                <ListingSmall />
-                <ListingSmall />
-                <ListingSmall />
-                <ListingSmall />
+                {listingCards}
             </div>
         </div>
     )

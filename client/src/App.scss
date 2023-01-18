@@ -125,15 +125,19 @@ body {
     // }
 }
 
-.shown {
-    display: block;
-}
+// #spc {
+//     margin-top: 150px;
+//     visibility: hidden;
+
+//     scroll-margin-top: 110px;
+// }
 
 #listingcontainer {
-    margin-top: 150px;
-    scroll-margin-top: 120px;
-
     display: none;
+    
+    margin-top: 150px;
+    // scroll-margin-top: 10px;
+    padding-bottom: 100px;
 
     h1 {
         margin-bottom: 0;

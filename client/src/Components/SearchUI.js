@@ -44,7 +44,10 @@ function SearchUI() {
     function scrollToResults() {
         const results = document.getElementById('listingcontainer');
         results.style.display = 'block';
-        results.scrollIntoView({ behavior: 'smooth', alignToTop: true })
+        results.scrollIntoView({ behavior: 'smooth' }); // alignToTop: true ???? this doesnt scroll correctly on first go, maybe has to do with display:none?
+        
+        // const spc = document.getElementById('spc');
+        // spc.scrollIntoView({ behavior: 'smooth', alignToTop: true });
     }
 
     function handleSelection(e) {
@@ -88,6 +91,8 @@ function SearchUI() {
                         <option value='6'>grand rapids</option>
                     </select>
                 </form>
+
+                {/* <p id='spc'>...</p> */}
 
                 <ListingContainer searchText={searchText} listings={listings} />
         </div>
