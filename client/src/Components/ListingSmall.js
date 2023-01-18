@@ -1,11 +1,12 @@
 import React from "react";
 
-function ListingSmall() {
+function ListingSmall({ key, id, name, address, description, website, phone, comments }) {
     return (
         <div id='listingsmall'>
-            <h2>full spectrum family medicine</h2>
-            <h3>2025 abbot rd, suite 100, east lansing, mi</h3>
-            <p>we are a privately owned primary care practice with a focus on integrative and functional medicine. we have a growing population of transgender patients and pride ourselves on providing high quality, compassionate care.</p>
+            <h2>{name}</h2>
+            <h3>{address}</h3>
+            <p>{description}</p>
+            <p className='commentlabel'>{comments.length} comment{comments.length > 1 ? 's' : null}</p>
         </div>
     )
 }

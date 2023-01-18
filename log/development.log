@@ -17734,3 +17734,18 @@ Processing by ListingsController#index as */*
 Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.7ms | Allocations: 3671)
 
 
+Started GET "/listings?identity_id=3&service_id=1&location_id=1" for ::1 at 2023-01-18 15:34:49 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"1", "location_id"=>"1"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", 1], ["location_id", 1]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.27ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.6ms | Allocations: 3671)
+
+
