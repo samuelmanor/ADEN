@@ -68,7 +68,7 @@ function SearchUI() {
                 </form>
 
                 {/* eventually this'll be something like {listings ? <ListingContainer /> : null} */}
-                {/* <ListingContainer /> */}
+                <ListingContainer />
         </div>
     )
 }

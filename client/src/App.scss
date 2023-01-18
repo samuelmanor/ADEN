@@ -125,6 +125,40 @@ body {
     // }
 }
 
+#listingcontainer {
+    margin-top: 150px;
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    #searchtitle {
+        font-size: 30px;
+        padding: 30px;
+        color: $offwhite;
+
+        background: linear-gradient(-45deg, $darkpink, $lightpink, $lightblue, $darkblue);
+        background-size: 250% 250%;
+        animation: gradient 10s ease infinite;
+        -webkit-animation: gradient 10s ease infinite;
+
+        h2 {
+            display: inline;
+            padding-right: 10px;
+        }
+
+        .searchnear {
+            font-weight: lighter;
+        }
+    }
+
+    #listingsmallcontainer {
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+    }
+}
+
 // animations:
 @keyframes gradient {
     0% {
