@@ -11,7 +11,6 @@ function SearchUI() {
         fetch(`http://localhost:3000/listings?identity_id=3&service_id=${searchObj.service}&location_id=${searchObj.location}`)
         .then((r) => r.json())
         .then((listingsArray) => {
-            // console.log('searchText', searchText);
             setListings(listingsArray);
         })
     }
@@ -33,6 +32,7 @@ function SearchUI() {
             getListings();
             scrollToResults();
         } else {
+            console.log('listings', listings)
             console.log('invalid', searchObj);
         }
     }, [searchObj])
@@ -43,6 +43,7 @@ function SearchUI() {
 
     function scrollToResults() {
         const results = document.getElementById('listingcontainer');
+        results.style.display = 'block';
         results.scrollIntoView({ behavior: 'smooth', alignToTop: true })
     }
 
@@ -88,8 +89,7 @@ function SearchUI() {
                     </select>
                 </form>
 
-                {/* eventually this'll be something like {listings ? <ListingContainer /> : null} */}
-                <ListingContainer searchText={searchText} />
+                <ListingContainer searchText={searchText} listings={listings} />
         </div>
     )
 }

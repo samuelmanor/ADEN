@@ -1,7 +1,7 @@
 import React from "react";
 import ListingSmall from "./ListingSmall";
 
-function ListingContainer({ searchText }) {
+function ListingContainer({ searchText, listings }) {
     return (
         <div id='listingcontainer'>
             <h1>results for</h1>

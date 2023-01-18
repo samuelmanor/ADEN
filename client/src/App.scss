@@ -125,9 +125,15 @@ body {
     // }
 }
 
+.shown {
+    display: block;
+}
+
 #listingcontainer {
     margin-top: 150px;
     scroll-margin-top: 120px;
+
+    display: none;
 
     h1 {
         margin-bottom: 0;
