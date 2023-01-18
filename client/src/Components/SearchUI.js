@@ -2,35 +2,56 @@ import React, { useState, useEffect } from "react";
 import ListingContainer from "./ListingContainer";
 
 function SearchUI() {
-    const [searchQuery, setSearchQuery] = useState({identity: 0, service: 0, location: 0});
+    const [searchObj, setSearchObj] = useState({identity: 0, service: 0, location: 0});
+    const [searchText, setSearchText] = useState(['', '', '']);
     const [listings, setListings] = useState([]);
 
     function getListings() {
         // the variable for identity_id is static because all entries in db have an identity_id of 3
-        fetch(`http://localhost:3000/listings?identity_id=3&service_id=${searchQuery.service}&location_id=${searchQuery.location}`)
+        fetch(`http://localhost:3000/listings?identity_id=3&service_id=${searchObj.service}&location_id=${searchObj.location}`)
         .then((r) => r.json())
         .then((listingsArray) => {
-            console.log(listingsArray);
+            // console.log('searchText', searchText);
             setListings(listingsArray);
         })
     }
 
+    function getText() {
+        const idsel = document.getElementById('identity');
+        const sersel = document.getElementById('service');
+        const locsel = document.getElementById('location');
+
+        setSearchText([
+            idsel.options[idsel.selectedIndex].text,
+            sersel.options[sersel.selectedIndex].text,
+            locsel.options[locsel.selectedIndex].text
+        ])
+    }
+
     useEffect(() => {
-        if (Object.values(searchQuery).every(p => p)) {
+        if (Object.values(searchObj).every(p => p)) {
             getListings();
+            scrollToResults();
         } else {
-            console.log('invalid', searchQuery);
+            console.log('invalid', searchObj);
         }
-    }, [searchQuery])
+    }, [searchObj])
 
     function correctSelectStyle(e) {
         e.target.className = 'selected';
     }
 
+    function scrollToResults() {
+        const results = document.getElementById('listingcontainer');
+        results.scrollIntoView({ behavior: 'smooth', alignToTop: true })
+    }
+
     function handleSelection(e) {
-        let query = {...searchQuery};
+        getText();
+
+        let query = {...searchObj};
         query[e.target.id] = parseInt(e.currentTarget.value);
-        setSearchQuery(query);
+        setSearchObj(query);
     }
 
     return (
@@ -68,7 +89,7 @@ function SearchUI() {
                 </form>
 
                 {/* eventually this'll be something like {listings ? <ListingContainer /> : null} */}
-                <ListingContainer />
+                <ListingContainer searchText={searchText} />
         </div>
     )
 }
