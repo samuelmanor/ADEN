@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   # resources :bookmarks, only: [:index, :create, :destroy]
 
-  resources :listings, only: :index
+  resources :listings, only: [:index, :show]
 
   get '/me', to: 'users#show'
 

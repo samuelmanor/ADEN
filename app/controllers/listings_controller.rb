@@ -11,4 +11,9 @@ class ListingsController < ApplicationController
         render json: listings
     end
 
+    def show
+        listing = Listing.find(params[:id])
+        render json: listing
+    end
+
 end
