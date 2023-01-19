@@ -30,6 +30,7 @@ function SearchUI() {
     useEffect(() => {
         if (Object.values(searchObj).every(p => p)) {
             getListings();
+            // getText(); could go here?
             scrollToResults();
         } else {
             console.log('listings', listings)
@@ -44,7 +45,7 @@ function SearchUI() {
     function scrollToResults() {
         const results = document.getElementById('listingcontainer');
         results.style.display = 'block';
-        results.scrollIntoView({ behavior: 'smooth' }); // alignToTop: true ???? this doesnt scroll correctly on first go, maybe has to do with display:none?
+        results.scrollIntoView({ behavior: 'smooth', alignToTop: true }); // this doesnt scroll correctly on first go, maybe has to do with display:none?
         
         // const spc = document.getElementById('spc');
         // spc.scrollIntoView({ behavior: 'smooth', alignToTop: true });
