@@ -1,10 +1,10 @@
 import React from "react";
-import ListingSmall from "./ListingSmall";
+import Listing from "./Listing";
 
 function ListingContainer({ searchText, listings }) {
     let listingCards = listings.map((listing) => {
         return (
-            <ListingSmall 
+            <Listing 
                 key={listing.id}
                 id={listing.id}
                 name={listing.name}
