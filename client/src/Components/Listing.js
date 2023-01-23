@@ -1,16 +1,21 @@
 import React, { useState } from "react";
 
-function ListingSmall({ name, address, description, website, phone, comments }) {
+function Listing({ name, address, description, website, phone, comments }) {
     const [shown, toggleShown] = useState(false);
 
     const large = <div id='listinglarge' className='hiddenlisting'> 
         <h1 id='x' onClick={toggleExpandView}>x</h1>
         <h2>{name}</h2>
         <h3>{address}</h3>
-        <p>{description}</p>
-        <div id='listinginfo'>
-            <h3><a href={'http://' + website}>website</a></h3>
-            <h3>{phone}</h3>
+        <div className='listinglargeinfo'>
+            <p>{description}</p>
+            <div id='listinginfo'>
+                <h3><a href={'http://' + website}>website</a></h3>
+                <h3>{phone}</h3>
+            </div>
+        </div>
+        <div className='listinglargeinfo'>
+            {/* comments go here */}
         </div>
     </div>
 
@@ -40,4 +45,4 @@ function ListingSmall({ name, address, description, website, phone, comments }) 
     )
 }
 
-export default ListingSmall;
+export default Listing;
