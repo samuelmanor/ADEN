@@ -1,15 +1,27 @@
 import React, { useState } from "react";
 
-function LoginUI({ currentUser, setCurrentUser, loginState, setLoginState }) {
+function LoginUI({ currentUser, setCurrentUser, loginState, setLoginState, displayLoginUI }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
     function handleLogin() {
-        console.log('clicked')
+        setLoginState(true);
+
+        // login endpoint fetch which ends w/ setCurrentUser
+
+        setCurrentUser({
+            username: username
+        });
+
+        displayLoginUI();
     }
 
     function handleLogout() {
-        console.log('clicked')
+        setLoginState(false);
+
+        // logout endpoint fetch
+
+        displayLoginUI();
     }
 
     const loginForm = (
@@ -33,7 +45,7 @@ function LoginUI({ currentUser, setCurrentUser, loginState, setLoginState }) {
 
     return(
         <div id='loginui'>
-            
+            {loginState ? logoutForm : loginForm}
         </div>
     )
 }
