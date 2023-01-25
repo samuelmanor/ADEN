@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import LoginUI from "./LoginUI";
 
-function Header() {
+function Header({ currentUser, setCurrentUser, loginState, setLoginState }) {
     const [showLoginUI, toggleShowLoginUI] = useState(false);
 
     function displayLoginUI() {
@@ -13,7 +13,7 @@ function Header() {
             <div className='headertab' id='title'>ADEN</div>
             <div className='headertab' onClick={displayLoginUI}>log in</div>
 
-            {showLoginUI ? <LoginUI /> : null}
+            {showLoginUI ? <LoginUI currentUser={currentUser} setCurrentUser={setCurrentUser} loginState={loginState} setLoginState={setLoginState} /> : null}
         </div>
     )
 }

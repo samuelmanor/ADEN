@@ -50,6 +50,11 @@ body {
     }
 }
 
+#loginui {
+    position: fixed;
+    background-color: red;
+}
+
 #searchbox {
     width: 70%;
     height: 500px;
@@ -106,23 +111,6 @@ body {
     #location {
         width: 590px;
     }
-
-    // button {
-    //     display: block;
-    //     margin: 0 auto;
-    //     margin-top: 35px;
-    //     cursor: pointer;
-
-    //     border: none;
-    //     background-color: transparent;
-    //     color: $offwhite;
-    //     font-family: $epilogue;
-    //     font-size: 30px;
-    // }
-
-    // button:hover {
-    //     border-bottom: 2px solid $offwhite;
-    // }
 }
 
 #listingcontainer {
@@ -130,7 +118,6 @@ body {
     
     margin-top: 150px;
     scroll-margin-top: 120px;
-    // padding-bottom: 30px;
 
     h1 {
         margin-bottom: 0;
