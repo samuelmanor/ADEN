@@ -197,6 +197,7 @@ body {
             bottom: 0;
 
             background-color: $offwhite;
+            user-select: auto;
 
             h2 {
                 cursor: default;
@@ -226,11 +227,45 @@ body {
                 -webkit-text-stroke-width: 2px;
                 -webkit-text-stroke-color: $offwhite;
             }
+
+            #listingdesc {
+                width: 50%;
+                float: left;
+                height: 350px;
+            }
+
+            #listingcommentcontainer {
+                width: 50%;
+                height: 350px;
+                float: right;
+                overflow: scroll;
+            }
         }
 
         .hiddenlisting {
             visibility: hidden;
             position: fixed;
+        }
+
+        .comment {
+            border-bottom: 1px solid $border;
+            background-color: red;
+
+            margin: 25px 20px 0 20px;
+            height: fit-content;
+
+            h4 {
+                font-size: 25px;
+                font-weight: light;
+
+                padding: 0;
+                margin: 0;
+            }
+
+            p {
+                font-size: 16px;
+                margin-left: 10px;
+            }
         }
     }
 }

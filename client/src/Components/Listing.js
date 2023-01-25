@@ -1,21 +1,36 @@
 import React, { useState } from "react";
+import Comment from "./Comment";
 
 function Listing({ name, address, description, website, phone, comments }) {
     const [shown, toggleShown] = useState(false);
+
+    let commentCards = comments.map((comment) => {
+        return (
+            <Comment 
+                key={comment.id}
+                id={comment.id}
+                user_id={comment.user_id}
+                listing_id={comment.listing_id}
+                commenttext={comment.commenttext}
+                author={comment.author}
+            />
+        )
+    })
 
     const large = <div id='listinglarge' className='hiddenlisting'> 
         <h1 id='x' onClick={toggleExpandView}>x</h1>
         <h2>{name}</h2>
         <h3>{address}</h3>
-        <div className='listinglargeinfo'>
+        <div id='listingdesc'>
             <p>{description}</p>
-            <div id='listinginfo'>
+            <div>
                 <h3><a href={'http://' + website}>website</a></h3>
                 <h3>{phone}</h3>
             </div>
         </div>
-        <div className='listinglargeinfo'>
-            {/* comments go here */}
+        <h3>comments:</h3>
+        <div id='listingcommentcontainer'>
+            {commentCards}
         </div>
     </div>
 

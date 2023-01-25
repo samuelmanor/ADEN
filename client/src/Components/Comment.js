@@ -1,9 +1,10 @@
 import React from "react";
 
-function Comment() {
+function Comment({id, user_id, listing_id, commenttext, author}) {
     return (
-        <div id='comment'>
-
+        <div className='comment'>
+            <h4>{author}</h4>
+            <p>{commenttext}</p>
         </div>
     )
 }
