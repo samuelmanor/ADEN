@@ -1,27 +1,52 @@
 import React, { useState } from "react";
 
-function LoginUI({ currentUser, setCurrentUser, loginState, setLoginState, displayLoginUI }) {
+function LoginUI({ setCurrentUser, loginState, setLoginState, displayLoginUI }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-    function handleLogin() {
-        setLoginState(true);
+    function onWrongInfo() {
+        const loginbtn = document.getElementById('loginbtn');
 
-        // login endpoint fetch which ends w/ setCurrentUser
+        loginbtn.innerText = 'Wrong user or pass!';
+        setTimeout(function() {
+            loginbtn.innerText = 'log in';
+        }, 3000);
+    }
 
-        setCurrentUser({
-            username: username
+    function handleLogin(e) {
+        e.preventDefault();
+
+        const user = {
+            username: username,
+            password: password
+        };
+
+        fetch('http://localhost:3000/login/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(user),
+        })
+        .then((res) => {
+            if (res.ok) {
+                setCurrentUser(res.json());
+                setLoginState(true);
+                displayLoginUI();
+            } else {
+                onWrongInfo();
+            }
         });
-
-        displayLoginUI();
     }
 
     function handleLogout() {
-        setLoginState(false);
-
-        // logout endpoint fetch
-
-        displayLoginUI();
+        fetch('http://localhost:3000/logout/', {
+            method: 'DELETE',
+        }).then(() => {
+            setCurrentUser({});
+            setLoginState(false);
+            displayLoginUI();
+        });
     }
 
     const loginForm = (
@@ -32,18 +57,17 @@ function LoginUI({ currentUser, setCurrentUser, loginState, setLoginState, displ
             <label htmlFor='password'>password:</label>
             <input type='password' name='password' value={password} onChange={(e) => setPassword(e.target.value)} />
 
-            <button type='submit'>log in</button>
+            <button type='submit' id='loginbtn'>log in</button>
         </form>
     );
 
     const logoutForm = (
         <div id='logoutform'>
-            <p>profile</p>
             <button onClick={handleLogout}>log out</button>
         </div>
-    )
+    );
 
-    return(
+    return (
         <div id='loginui'>
             {loginState ? logoutForm : loginForm}
         </div>

@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resources :comments, except: :show
 
+  resources :sessions, only: :index
+
   # resources :bookmarks, only: [:index, :create, :destroy]
 
   resources :listings, only: [:index, :show]

@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header currentUser={currentUser} setCurrentUser={setCurrentUser} loginState={loginState} setLoginState={setLoginState} />
+      <Header setCurrentUser={setCurrentUser} loginState={loginState} setLoginState={setLoginState} />
       <SearchUI loginState={loginState} currentUser={currentUser} />
     </div>
   );

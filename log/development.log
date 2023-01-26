@@ -18875,3 +18875,1312 @@ Processing by ListingsController#index as */*
 Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.8ms | Allocations: 3671)
 
 
+Started GET "/listings" for ::1 at 2023-01-25 17:18:55 -0500
+Processing by ListingsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.2ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 1]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 4]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 4]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.2ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 5]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 5]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 6]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 6]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 7]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 7]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 8]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 8]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 9]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 9]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 10]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 10]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 11]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 11]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 12]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 12]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 13]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 13]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 14]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 14]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 15]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 15]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 16]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 16]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 17]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 17]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 18]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 18]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (56.93ms)
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 5.7ms | Allocations: 43088)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-01-25 17:18:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2023-01-25 17:18:55 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/smanor/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/smanor/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 230)
+
+
+Started GET "/users/1" for ::1 at 2023-01-25 17:18:56 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `show'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 401 Unauthorized in 13ms (Views: 6.1ms | ActiveRecord: 0.4ms | Allocations: 1103)
+
+
+Started GET "/users/" for ::1 at 2023-01-25 17:18:59 -0500
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController
+Did you mean?  update
+               create
+               show):
+  
+actionpack (6.1.3.2) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/users/1" for ::1 at 2023-01-25 17:19:06 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `show'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 401 Unauthorized in 3ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 732)
+
+
+Started GET "/users/" for ::1 at 2023-01-25 17:21:38 -0500
+Processing by UsersController#index as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.8ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.63ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 2.7ms | Allocations: 20149)
+
+
+Started GET "/users/1" for ::1 at 2023-01-25 17:22:51 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:15:in `show'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `show'
+[active_model_serializers]   [1m[36mBookmark Load (0.9ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `show'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `show'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (9.39ms)
+Completed 200 OK in 20ms (Views: 9.1ms | ActiveRecord: 2.5ms | Allocations: 13652)
+
+
+Started POST "/login" for ::1 at 2023-01-25 17:32:04 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"samuel", "password"=>"[FILTERED]", "session"=>{"username"=>"samuel", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "samuel"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers]   [1m[36mBookmark Load (0.8ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (14.21ms)
+Completed 200 OK in 28ms (Views: 15.9ms | ActiveRecord: 1.9ms | Allocations: 21114)
+
+
+Started POST "/login" for ::1 at 2023-01-25 17:33:54 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"samuel", "password"=>"[FILTERED]", "session"=>{"username"=>"samuel", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "samuel"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers]   [1m[36mBookmark Load (1.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.54ms)
+Completed 200 OK in 14ms (Views: 7.9ms | ActiveRecord: 2.5ms | Allocations: 3489)
+
+
+Started POST "/login" for ::1 at 2023-01-25 17:34:48 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"samuel", "password"=>"[FILTERED]", "session"=>{"username"=>"samuel", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "samuel"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.42ms)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.6ms | Allocations: 3466)
+
+
+Started POST "/login" for ::1 at 2023-01-25 17:41:47 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"samuel", "password"=>"[FILTERED]", "session"=>{"username"=>"samuel", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "samuel"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers]   [1m[36mBookmark Load (0.8ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (14.59ms)
+Completed 200 OK in 31ms (Views: 16.6ms | ActiveRecord: 2.0ms | Allocations: 21134)
+
+
+Started GET "/listings?identity_id=3&service_id=1&location_id=2" for ::1 at 2023-01-25 17:43:14 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"1", "location_id"=>"2"}
+  [1m[36mListing Load (1.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", 1], ["location_id", 2]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.2ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.43ms)
+Completed 200 OK in 30ms (Views: 20.4ms | ActiveRecord: 3.3ms | Allocations: 17200)
+
+
+Started GET "/listings?identity_id=3&service_id=1&location_id=2" for ::1 at 2023-01-25 17:43:18 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"1", "location_id"=>"2"}
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", 1], ["location_id", 2]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.4ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 1.4ms | Allocations: 9945)
+
+
+Started POST "/login" for ::1 at 2023-01-25 17:43:39 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"samuel", "password"=>"[FILTERED]", "session"=>{"username"=>"samuel", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "samuel"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers]   [1m[36mBookmark Load (1.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.83ms)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 1.5ms | Allocations: 3491)
+
+
+Started GET "/listings?identity_id=3&service_id=1&location_id=2" for ::1 at 2023-01-25 17:44:03 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"1", "location_id"=>"2"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", 1], ["location_id", 2]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.8ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 1.3ms | Allocations: 9923)
+
+
+Started GET "/listings?identity_id=3&service_id=1&location_id=2" for ::1 at 2023-01-25 17:44:13 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"1", "location_id"=>"2"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", 1], ["location_id", 2]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.2ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.2ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 1.1ms | Allocations: 9920)
+
+
+Started GET "/listings?identity_id=3&service_id=2&location_id=2" for ::1 at 2023-01-25 17:44:20 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"2", "location_id"=>"2"}
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", 2], ["location_id", 2]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.7ms | Allocations: 944)
+
+
+Started GET "/listings?identity_id=3&service_id=3&location_id=2" for ::1 at 2023-01-25 17:44:23 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"3", "location_id"=>"2"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", 3], ["location_id", 2]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 18]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 18]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.01ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.6ms | Allocations: 2918)
+
+
+Started GET "/listings?identity_id=3&service_id=1&location_id=2" for ::1 at 2023-01-25 17:44:26 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"1", "location_id"=>"2"}
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", 1], ["location_id", 2]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.2ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 2]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.2ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 3]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/models/comment.rb:6:in `author'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (36.12ms)
+Completed 200 OK in 42ms (Views: 40.0ms | ActiveRecord: 1.4ms | Allocations: 9920)
+
+
+Started GET "/listings?identity_id=3&service_id=1&location_id=5" for ::1 at 2023-01-25 17:45:27 -0500
+Processing by ListingsController#index as */*
+  Parameters: {"identity_id"=>"3", "service_id"=>"1", "location_id"=>"5"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."identity_id" IN (?, ?) AND "listings"."service_id" = ? AND "listings"."location_id" = ?[0m  [[nil, 3], [nil, 3], ["service_id", 1], ["location_id", 5]]
+  ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 5]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 5]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.2ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 6]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 6]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."listing_id" = ?[0m  [["listing_id", 7]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."listing_id" = ?[0m  [["listing_id", 7]]
+[active_model_serializers]   ↳ app/controllers/listings_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.85ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 1.3ms | Allocations: 6928)
+
+
+Started GET "/" for ::1 at 2023-01-25 19:56:10 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/smanor/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/smanor/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.4ms | Allocations: 294)
+Completed 200 OK in 18ms (Views: 8.8ms | Allocations: 2270)
+
+
+Started GET "/sessions" for ::1 at 2023-01-25 19:56:10 -0500
+Processing by FallbackController#index as HTML
+  Parameters: {"path"=>"sessions"}
+Completed 500 Internal Server Error in 1ms (Allocations: 342)
+
+
+  
+ArgumentError (`render file:` should be given the absolute path to a file. 'public/index.html' was given instead):
+  
+app/controllers/fallback_controller.rb:7:in `index'
+Started GET "/sessions" for ::1 at 2023-01-25 19:57:28 -0500
+Processing by FallbackController#index as HTML
+  Parameters: {"path"=>"sessions"}
+Completed 500 Internal Server Error in 1ms (Allocations: 354)
+
+
+  
+ArgumentError (`render file:` should be given the absolute path to a file. 'public/index.html' was given instead):
+  
+app/controllers/fallback_controller.rb:7:in `index'
+Started GET "/sessions" for ::1 at 2023-01-25 19:58:31 -0500
+Processing by SessionsController#index as HTML
+Completed 500 Internal Server Error in 3ms (Allocations: 1879)
+
+
+  
+NameError (uninitialized constant SessionsController::Session):
+  
+app/controllers/sessions_controller.rb:4:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "bookmarks"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "bookmarks" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_bookmarks_on_listing_id" ON "bookmarks" ("listing_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_bookmarks_on_user_id" ON "bookmarks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "commenttext" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_comments_on_listing_id" ON "comments" ("listing_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "identities"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "identities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "listings"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "listings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "identity_id" integer NOT NULL, "service_id" integer NOT NULL, "location_id" integer NOT NULL, "name" varchar, "address" varchar, "description" varchar, "website" varchar, "phone" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_listings_on_identity_id" ON "listings" ("identity_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_listings_on_location_id" ON "listings" ("location_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_listings_on_service_id" ON "listings" ("service_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "locations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "locations" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "services"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "service" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password" varchar, "email" varchar, "bio" varchar, "avatar" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "abookmarks" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_abookmarks_on_user_id" ON "abookmarks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_abookmarks_on_listing_id" ON "abookmarks" ("listing_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "abookmarks" ("id","user_id","listing_id","created_at","updated_at")
+                     SELECT "id","user_id","listing_id","created_at","updated_at" FROM "bookmarks"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "bookmarks"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "bookmarks" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_c06420b17c"
+FOREIGN KEY ("listing_id")
+  REFERENCES "listings" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_bookmarks_on_listing_id" ON "bookmarks" ("listing_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_bookmarks_on_user_id" ON "bookmarks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "bookmarks" ("id","user_id","listing_id","created_at","updated_at")
+                     SELECT "id","user_id","listing_id","created_at","updated_at" FROM "abookmarks"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "abookmarks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "abookmarks" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_abookmarks_on_user_id" ON "abookmarks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_abookmarks_on_listing_id" ON "abookmarks" ("listing_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "abookmarks" ("id","user_id","listing_id","created_at","updated_at")
+                     SELECT "id","user_id","listing_id","created_at","updated_at" FROM "bookmarks"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "bookmarks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "bookmarks" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_c06420b17c"
+FOREIGN KEY ("listing_id")
+  REFERENCES "listings" ("id")
+, CONSTRAINT "fk_rails_c1ff6fa4ac"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_bookmarks_on_listing_id" ON "bookmarks" ("listing_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_bookmarks_on_user_id" ON "bookmarks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "bookmarks" ("id","user_id","listing_id","created_at","updated_at")
+                     SELECT "id","user_id","listing_id","created_at","updated_at" FROM "abookmarks"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "abookmarks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acomments" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "commenttext" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_acomments_on_user_id" ON "acomments" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_acomments_on_listing_id" ON "acomments" ("listing_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "acomments" ("id","user_id","listing_id","commenttext","created_at","updated_at")
+                     SELECT "id","user_id","listing_id","commenttext","created_at","updated_at" FROM "comments"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "comments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "commenttext" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a71be3ac94"
+FOREIGN KEY ("listing_id")
+  REFERENCES "listings" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_comments_on_listing_id" ON "comments" ("listing_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("id","user_id","listing_id","commenttext","created_at","updated_at")
+                     SELECT "id","user_id","listing_id","commenttext","created_at","updated_at" FROM "acomments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "acomments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acomments" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "commenttext" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_acomments_on_user_id" ON "acomments" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_acomments_on_listing_id" ON "acomments" ("listing_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "acomments" ("id","user_id","listing_id","commenttext","created_at","updated_at")
+                     SELECT "id","user_id","listing_id","commenttext","created_at","updated_at" FROM "comments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "comments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "commenttext" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a71be3ac94"
+FOREIGN KEY ("listing_id")
+  REFERENCES "listings" ("id")
+, CONSTRAINT "fk_rails_03de2dc08c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_comments_on_listing_id" ON "comments" ("listing_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("id","user_id","listing_id","commenttext","created_at","updated_at")
+                     SELECT "id","user_id","listing_id","commenttext","created_at","updated_at" FROM "acomments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "acomments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "alistings" ("id" integer NOT NULL PRIMARY KEY, "identity_id" integer NOT NULL, "service_id" integer NOT NULL, "location_id" integer NOT NULL, "name" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "website" varchar DEFAULT NULL, "phone" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_service_id" ON "alistings" ("service_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_location_id" ON "alistings" ("location_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_identity_id" ON "alistings" ("identity_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "alistings" ("id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at")
+                     SELECT "id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at" FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "listings"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "listings" ("id" integer NOT NULL PRIMARY KEY, "identity_id" integer NOT NULL, "service_id" integer NOT NULL, "location_id" integer NOT NULL, "name" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "website" varchar DEFAULT NULL, "phone" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_b657f9e609"
+FOREIGN KEY ("identity_id")
+  REFERENCES "identities" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_identity_id" ON "listings" ("identity_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_location_id" ON "listings" ("location_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_service_id" ON "listings" ("service_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "listings" ("id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at")
+                     SELECT "id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at" FROM "alistings"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "alistings"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "alistings" ("id" integer NOT NULL PRIMARY KEY, "identity_id" integer NOT NULL, "service_id" integer NOT NULL, "location_id" integer NOT NULL, "name" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "website" varchar DEFAULT NULL, "phone" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_service_id" ON "alistings" ("service_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_location_id" ON "alistings" ("location_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_identity_id" ON "alistings" ("identity_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "alistings" ("id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at")
+                     SELECT "id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at" FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "listings"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "listings" ("id" integer NOT NULL PRIMARY KEY, "identity_id" integer NOT NULL, "service_id" integer NOT NULL, "location_id" integer NOT NULL, "name" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "website" varchar DEFAULT NULL, "phone" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_b657f9e609"
+FOREIGN KEY ("identity_id")
+  REFERENCES "identities" ("id")
+, CONSTRAINT "fk_rails_7c4c59488b"
+FOREIGN KEY ("location_id")
+  REFERENCES "locations" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_identity_id" ON "listings" ("identity_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_location_id" ON "listings" ("location_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_service_id" ON "listings" ("service_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "listings" ("id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at")
+                     SELECT "id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at" FROM "alistings"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "alistings"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "alistings" ("id" integer NOT NULL PRIMARY KEY, "identity_id" integer NOT NULL, "service_id" integer NOT NULL, "location_id" integer NOT NULL, "name" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "website" varchar DEFAULT NULL, "phone" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_service_id" ON "alistings" ("service_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_location_id" ON "alistings" ("location_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_identity_id" ON "alistings" ("identity_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "alistings" ("id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at")
+                     SELECT "id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at" FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "listings"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "listings" ("id" integer NOT NULL PRIMARY KEY, "identity_id" integer NOT NULL, "service_id" integer NOT NULL, "location_id" integer NOT NULL, "name" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "website" varchar DEFAULT NULL, "phone" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_7c4c59488b"
+FOREIGN KEY ("location_id")
+  REFERENCES "locations" ("id")
+, CONSTRAINT "fk_rails_b657f9e609"
+FOREIGN KEY ("identity_id")
+  REFERENCES "identities" ("id")
+, CONSTRAINT "fk_rails_92d22cebfd"
+FOREIGN KEY ("service_id")
+  REFERENCES "services" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_identity_id" ON "listings" ("identity_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_location_id" ON "listings" ("location_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_service_id" ON "listings" ("service_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "listings" ("id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at")
+                     SELECT "id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at" FROM "alistings"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "alistings"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20220525012920)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20220525011809),
+(20220525012033),
+(20220525012344),
+(20220525012445),
+(20220525012712),
+(20220525012736);
+
+[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-01-26 01:00:29.707127"], ["updated_at", "2023-01-26 01:00:29.707127"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "2baf260301ee119926d9c8cc0d5f83093aeab3e3"], ["created_at", "2023-01-26 01:00:29.709328"], ["updated_at", "2023-01-26 01:00:29.709328"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "bookmarks"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "bookmarks" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_bookmarks_on_listing_id" ON "bookmarks" ("listing_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_bookmarks_on_user_id" ON "bookmarks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "commenttext" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_comments_on_listing_id" ON "comments" ("listing_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "identities"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "identities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "listings"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "listings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "identity_id" integer NOT NULL, "service_id" integer NOT NULL, "location_id" integer NOT NULL, "name" varchar, "address" varchar, "description" varchar, "website" varchar, "phone" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_listings_on_identity_id" ON "listings" ("identity_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_listings_on_location_id" ON "listings" ("location_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_listings_on_service_id" ON "listings" ("service_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "locations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "locations" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "services"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "service" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password" varchar, "email" varchar, "bio" varchar, "avatar" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "abookmarks" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_abookmarks_on_user_id" ON "abookmarks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_abookmarks_on_listing_id" ON "abookmarks" ("listing_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "abookmarks" ("id","user_id","listing_id","created_at","updated_at")
+                     SELECT "id","user_id","listing_id","created_at","updated_at" FROM "bookmarks"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "bookmarks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "bookmarks" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_c06420b17c"
+FOREIGN KEY ("listing_id")
+  REFERENCES "listings" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_bookmarks_on_listing_id" ON "bookmarks" ("listing_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_bookmarks_on_user_id" ON "bookmarks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "bookmarks" ("id","user_id","listing_id","created_at","updated_at")
+                     SELECT "id","user_id","listing_id","created_at","updated_at" FROM "abookmarks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "abookmarks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "abookmarks" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_abookmarks_on_user_id" ON "abookmarks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_abookmarks_on_listing_id" ON "abookmarks" ("listing_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "abookmarks" ("id","user_id","listing_id","created_at","updated_at")
+                     SELECT "id","user_id","listing_id","created_at","updated_at" FROM "bookmarks"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "bookmarks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "bookmarks" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_c06420b17c"
+FOREIGN KEY ("listing_id")
+  REFERENCES "listings" ("id")
+, CONSTRAINT "fk_rails_c1ff6fa4ac"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_bookmarks_on_listing_id" ON "bookmarks" ("listing_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_bookmarks_on_user_id" ON "bookmarks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "bookmarks" ("id","user_id","listing_id","created_at","updated_at")
+                     SELECT "id","user_id","listing_id","created_at","updated_at" FROM "abookmarks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "abookmarks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acomments" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "commenttext" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_acomments_on_user_id" ON "acomments" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_acomments_on_listing_id" ON "acomments" ("listing_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "acomments" ("id","user_id","listing_id","commenttext","created_at","updated_at")
+                     SELECT "id","user_id","listing_id","commenttext","created_at","updated_at" FROM "comments"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "comments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "commenttext" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a71be3ac94"
+FOREIGN KEY ("listing_id")
+  REFERENCES "listings" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_comments_on_listing_id" ON "comments" ("listing_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("id","user_id","listing_id","commenttext","created_at","updated_at")
+                     SELECT "id","user_id","listing_id","commenttext","created_at","updated_at" FROM "acomments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "acomments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acomments" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "commenttext" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_acomments_on_user_id" ON "acomments" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_acomments_on_listing_id" ON "acomments" ("listing_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "acomments" ("id","user_id","listing_id","commenttext","created_at","updated_at")
+                     SELECT "id","user_id","listing_id","commenttext","created_at","updated_at" FROM "comments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "comments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "listing_id" integer NOT NULL, "commenttext" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a71be3ac94"
+FOREIGN KEY ("listing_id")
+  REFERENCES "listings" ("id")
+, CONSTRAINT "fk_rails_03de2dc08c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_comments_on_listing_id" ON "comments" ("listing_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("id","user_id","listing_id","commenttext","created_at","updated_at")
+                     SELECT "id","user_id","listing_id","commenttext","created_at","updated_at" FROM "acomments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "acomments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "alistings" ("id" integer NOT NULL PRIMARY KEY, "identity_id" integer NOT NULL, "service_id" integer NOT NULL, "location_id" integer NOT NULL, "name" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "website" varchar DEFAULT NULL, "phone" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_service_id" ON "alistings" ("service_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_location_id" ON "alistings" ("location_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_identity_id" ON "alistings" ("identity_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "alistings" ("id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at")
+                     SELECT "id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at" FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "listings"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "listings" ("id" integer NOT NULL PRIMARY KEY, "identity_id" integer NOT NULL, "service_id" integer NOT NULL, "location_id" integer NOT NULL, "name" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "website" varchar DEFAULT NULL, "phone" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_b657f9e609"
+FOREIGN KEY ("identity_id")
+  REFERENCES "identities" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_identity_id" ON "listings" ("identity_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_location_id" ON "listings" ("location_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_service_id" ON "listings" ("service_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "listings" ("id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at")
+                     SELECT "id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at" FROM "alistings"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "alistings"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "alistings" ("id" integer NOT NULL PRIMARY KEY, "identity_id" integer NOT NULL, "service_id" integer NOT NULL, "location_id" integer NOT NULL, "name" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "website" varchar DEFAULT NULL, "phone" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_service_id" ON "alistings" ("service_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_location_id" ON "alistings" ("location_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_identity_id" ON "alistings" ("identity_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "alistings" ("id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at")
+                     SELECT "id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at" FROM "listings"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "listings"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "listings" ("id" integer NOT NULL PRIMARY KEY, "identity_id" integer NOT NULL, "service_id" integer NOT NULL, "location_id" integer NOT NULL, "name" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "website" varchar DEFAULT NULL, "phone" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_b657f9e609"
+FOREIGN KEY ("identity_id")
+  REFERENCES "identities" ("id")
+, CONSTRAINT "fk_rails_7c4c59488b"
+FOREIGN KEY ("location_id")
+  REFERENCES "locations" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_identity_id" ON "listings" ("identity_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_location_id" ON "listings" ("location_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_service_id" ON "listings" ("service_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "listings" ("id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at")
+                     SELECT "id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at" FROM "alistings"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "alistings"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "alistings" ("id" integer NOT NULL PRIMARY KEY, "identity_id" integer NOT NULL, "service_id" integer NOT NULL, "location_id" integer NOT NULL, "name" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "website" varchar DEFAULT NULL, "phone" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_service_id" ON "alistings" ("service_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_location_id" ON "alistings" ("location_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_alistings_on_identity_id" ON "alistings" ("identity_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "alistings" ("id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at")
+                     SELECT "id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at" FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "listings"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "listings" ("id" integer NOT NULL PRIMARY KEY, "identity_id" integer NOT NULL, "service_id" integer NOT NULL, "location_id" integer NOT NULL, "name" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "website" varchar DEFAULT NULL, "phone" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_7c4c59488b"
+FOREIGN KEY ("location_id")
+  REFERENCES "locations" ("id")
+, CONSTRAINT "fk_rails_b657f9e609"
+FOREIGN KEY ("identity_id")
+  REFERENCES "identities" ("id")
+, CONSTRAINT "fk_rails_92d22cebfd"
+FOREIGN KEY ("service_id")
+  REFERENCES "services" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_identity_id" ON "listings" ("identity_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_location_id" ON "listings" ("location_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_listings_on_service_id" ON "listings" ("service_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "listings" ("id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at")
+                     SELECT "id","identity_id","service_id","location_id","name","address","description","website","phone","created_at","updated_at" FROM "alistings"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "alistings"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20220525012920)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20220525011809),
+(20220525012033),
+(20220525012344),
+(20220525012445),
+(20220525012712),
+(20220525012736);
+
+[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-01-26 01:00:29.769108"], ["updated_at", "2023-01-26 01:00:29.769108"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2023-01-26 01:00:29.770801"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "2baf260301ee119926d9c8cc0d5f83093aeab3e3"], ["created_at", "2023-01-26 01:00:29.773141"], ["updated_at", "2023-01-26 01:00:29.773141"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "email", "bio", "avatar", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["username", "sam"], ["password", "password"], ["email", "samuelmmanor@gmail.com"], ["bio", "lorem ipsum dolor sit amet"], ["avatar", ""], ["created_at", "2023-01-26 01:00:29.785276"], ["updated_at", "2023-01-26 01:00:29.785276"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIdentity Create (0.1ms)[0m  [1m[32mINSERT INTO "identities" ("identity", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["identity", "transfeminine"], ["created_at", "2023-01-26 01:00:29.789079"], ["updated_at", "2023-01-26 01:00:29.789079"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIdentity Create (0.1ms)[0m  [1m[32mINSERT INTO "identities" ("identity", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["identity", "transmasculine"], ["created_at", "2023-01-26 01:00:29.790538"], ["updated_at", "2023-01-26 01:00:29.790538"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIdentity Create (0.1ms)[0m  [1m[32mINSERT INTO "identities" ("identity", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["identity", "both"], ["created_at", "2023-01-26 01:00:29.791779"], ["updated_at", "2023-01-26 01:00:29.791779"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.1ms)[0m  [1m[32mINSERT INTO "services" ("service", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["service", "hormones"], ["created_at", "2023-01-26 01:00:29.795109"], ["updated_at", "2023-01-26 01:00:29.795109"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.1ms)[0m  [1m[32mINSERT INTO "services" ("service", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["service", "therapy"], ["created_at", "2023-01-26 01:00:29.796460"], ["updated_at", "2023-01-26 01:00:29.796460"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.1ms)[0m  [1m[32mINSERT INTO "services" ("service", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["service", "community"], ["created_at", "2023-01-26 01:00:29.797649"], ["updated_at", "2023-01-26 01:00:29.797649"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLocation Create (0.1ms)[0m  [1m[32mINSERT INTO "locations" ("location", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["location", "traverse city"], ["created_at", "2023-01-26 01:00:29.801082"], ["updated_at", "2023-01-26 01:00:29.801082"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLocation Create (0.1ms)[0m  [1m[32mINSERT INTO "locations" ("location", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["location", "lansing"], ["created_at", "2023-01-26 01:00:29.802466"], ["updated_at", "2023-01-26 01:00:29.802466"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLocation Create (0.1ms)[0m  [1m[32mINSERT INTO "locations" ("location", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["location", "kalamazoo"], ["created_at", "2023-01-26 01:00:29.803757"], ["updated_at", "2023-01-26 01:00:29.803757"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLocation Create (0.1ms)[0m  [1m[32mINSERT INTO "locations" ("location", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["location", "flint"], ["created_at", "2023-01-26 01:00:29.805021"], ["updated_at", "2023-01-26 01:00:29.805021"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLocation Create (0.1ms)[0m  [1m[32mINSERT INTO "locations" ("location", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["location", "detroit"], ["created_at", "2023-01-26 01:00:29.806282"], ["updated_at", "2023-01-26 01:00:29.806282"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLocation Create (0.1ms)[0m  [1m[32mINSERT INTO "locations" ("location", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["location", "grandrapids"], ["created_at", "2023-01-26 01:00:29.807508"], ["updated_at", "2023-01-26 01:00:29.807508"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.2ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 1], ["location_id", 1], ["name", "Milliken Medical Group - Morgan Buda, MD"], ["address", "224 Circle Drive, Traverse City, MI 49684"], ["description", "My training in LGBTQ medicine at the University of Minnesota has given me the experience to best serve the LGBTQ community in Northern Michigan. I am competent in HRT for transgender and gender non-binary folks as well as PrEP medication management."], ["website", "munsonhealthcare.org/find-a-doctor"], ["phone", "231-935-0600"], ["created_at", "2023-01-26 01:00:29.813517"], ["updated_at", "2023-01-26 01:00:29.813517"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.1ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 1], ["location_id", 2], ["name", "Full Spectrum Family Medicine"], ["address", "2025 Abbot Rd, Suite 100, East Lansing, MI 48823"], ["description", "We are a privately owned primary care practice with a focus on integrative and functional medicine. We have a growing population of transgender patients and pride ourselves on providing high quality, compassionate care."], ["website", "www.fullspectrumfamilymed.com"], ["phone", "517-333-3550"], ["created_at", "2023-01-26 01:00:29.815062"], ["updated_at", "2023-01-26 01:00:29.815062"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.1ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 1], ["location_id", 2], ["name", "MSU Family Medicine Clinic - Jessica Heselschwerdt"], ["address", "804 Service Rd, A235, East Lansing, MI 488824"], ["description", "I am a family medicine physician practicing in the Department of Family and Community Medicine at MSU. In addition to practicing most aspects of family medicine (other than delivering babies!), one of the services I provide for my patients is hormone therapy for gender transition."], ["website", "www.healthteam.msu.edu/providers"], ["phone", "517-335-1300"], ["created_at", "2023-01-26 01:00:29.816428"], ["updated_at", "2023-01-26 01:00:29.816428"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.1ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 1], ["location_id", 4], ["name", "Great Lakes Bay Health Centers - Craig Weeks, MD"], ["address", "1522 Janes Avenue, Saginaw, MI 48601"], ["description", "I am a family physician with a passion for serving the underserved. In addition to general primary care, I also provide care to people living with HIV and Hepatitis C, preexposure prophylaxis (PrEP) for HIV prevention, Suboxone for those with opiate use disorder, and gender-affirming hormone treatment for gender-diverse individuals."], ["website", "www.greatlakesbayhealthcenters.org"], ["phone", "989-755-0316"], ["created_at", "2023-01-26 01:00:29.817851"], ["updated_at", "2023-01-26 01:00:29.817851"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.1ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 1], ["location_id", 5], ["name", "Mott Children's Hospital - Daniel Schumer MD, MPH"], ["address", "1540 E Hospital Dr, Ann Arbor, MI 48109"], ["description", "The Gender Management (GEM) Program at Mott Children’s Hospital has been developed to care for transgender and gender non-conforming patients.  This program works hand-in-hand with the University of Michigan Health System Comprehensive Gender Services Program (UMHS-CGSP).  Dr. Daniel Shumer is a Pediatric Endocrinologist at GEM who is experienced at working with transgender youth.  He follows the World Professional Association of Transgender Health (WPATH) guidelines to help adolescents with transition, including puberty suppression (blockers) and cross-sex hormones (such as testosterone and estrogen)."], ["website", "www.mottchildren.org"], ["phone", "734-764-5175"], ["created_at", "2023-01-26 01:00:29.819082"], ["updated_at", "2023-01-26 01:00:29.819082"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.1ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 1], ["location_id", 5], ["name", "Henry Ford Hospital, Division of Endocrinology - Jessica Shill, MD"], ["address", "3031 W. Grand Blvd, Suite 800, Detroit MI 48202"], ["description", "I see transgender and gender non-conforming patients ages 15 and above. I also supervise the endocrinologists in training (fellows) in our division so they learn how to assist transgender and gender non-conforming people with gender-affirming therapy. We have a thriving practice, and see many transgender and gender non-conforming people each week."], ["website", "www.henryford.com"], ["phone", "313-916-2141"], ["created_at", "2023-01-26 01:00:29.820339"], ["updated_at", "2023-01-26 01:00:29.820339"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.1ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 1], ["location_id", 5], ["name", "The Ruth Ellis Health and Wellness Center"], ["address", "77 Victor St, Highland Park, MI 48203"], ["description", "The Ruth Ellis Health and Wellness Center is a primary care clinic for LGBTQ adolescents and young adults ages 10-30 years old.  Services include general primary care, well visits, gender affirming hormones, PrEP for HIV prevention, HIV treatment, STD testing and treatment, birth control, mental health services, and case management.  We are able to see patients regardless of their insurance status and labs and medications are covered by our program for uninsured patients."], ["website", "www.ruthelliscenter.org"], ["phone", "313-365-3338"], ["created_at", "2023-01-26 01:00:29.821645"], ["updated_at", "2023-01-26 01:00:29.821645"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.1ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 2], ["location_id", 3], ["name", "Avalon Behavioral Health - Amy E. Raad, LMSW"], ["address", "491 E Columbia Ave Suite 4, Battle Creek, MI 49014"], ["description", "I am very passionate about transgender health and advocacy. I hold certificates in sex therapy and sexuality education from the University of Michigan in addition to my master's degree."], ["website", "www.avalonbehavioralhealth.com"], ["phone", "269-962-9611"], ["created_at", "2023-01-26 01:00:29.823047"], ["updated_at", "2023-01-26 01:00:29.823047"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.1ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 2], ["location_id", 1], ["name", "Clinical Stress Relief LLC"], ["address", "812 Garfield Ave., Traverse City, MI 49686"], ["description", "WPATH (World Professional Association for Transgender Health) Provider. Guidance and support for every phase of exploration, transition, and authentic living for gender-nonconforming folks and our 'S.O.F.F.A.' (Significant Others, Families, Friends, and Allies). Private, single-user restrooms."], ["website", "www.clinicalstressrelief.com"], ["phone", "231-944-8200"], ["created_at", "2023-01-26 01:00:29.824374"], ["updated_at", "2023-01-26 01:00:29.824374"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.1ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 2], ["location_id", 1], ["name", "Old Town Psychological Services"], ["address", "512 S. Union St., Traverse City, MI 49684"], ["description", "Over 30 years of personal/professional/political involvement in the GLBTQ community. Affiliated with the University of Michigan Gender Clinic. Ask specifically for an intake with Dr. Anderson. Most insurances accepted; sliding fee scale available."], ["website", "www.oldtownpsych.com"], ["phone", "231-941-6550"], ["created_at", "2023-01-26 01:00:29.825659"], ["updated_at", "2023-01-26 01:00:29.825659"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.1ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 2], ["location_id", 6], ["name", "Arbor Circle Outpatient Counseling Services - Thomas J. Fox, LMSW, CAADC"], ["address", "1115 Ball Ave NE, Grand Rapids, Mi 49505"], ["description", "My name is TJ Fox and I am a therapist working in the Grand Rapids area.  I am also a trans man.  I have started working with other trans clients to assist them with their transition.  I work at an non profit organization called Arbor Circle.  We work with people with mental health and substance abuse disorders and they are very supportive of me working with trans clients."], ["website", "www.arborcircle.org"], ["phone", "616-456-6571"], ["created_at", "2023-01-26 01:00:29.826981"], ["updated_at", "2023-01-26 01:00:29.826981"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.1ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 2], ["location_id", 6], ["name", "Co-Creation Counseling"], ["address", "625 Kenmoor Ave, Suite 201, Grand Rapids, MI 49546"], ["description", "Co-Creation Counseling is a holistic counseling practice. We provide LGBTQIA+ affirming care and are racial justice allies. Clients seek our support regarding sexuality, gender, trauma, and stress with life changes. We are virtual only and accept most major insurance companies. There is a sliding fee scale for those in need."], ["website", "www.cocreationcounseling.com"], ["phone", "269-579-3875"], ["created_at", "2023-01-26 01:00:29.828256"], ["updated_at", "2023-01-26 01:00:29.828256"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.1ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 2], ["location_id", 6], ["name", "Pine Rest Christian Mental Health Services - Dr. Kimberly Kunze"], ["address", "3225 N. Evergreen Dr NE, Suite 301, Grand Rapids, MI  49525"], ["description", "I am a clinical psychologist at Pine Rest Christian Mental Health Services in Grand Rapids, MI, where I seek to affirm and celebrate gender and sexual diversity. I have focused on improving care and access to care for transgender/gender expansive/gender non-conforming individuals since 2012. I am a member of WPATH and can provide outpatient therapy for individuals, families, and couples. I am especially passionate about helping transgender folks who are having trouble being accepted or affirmed by their families, religious institutions, schools, or work. I love to coordinate care with doctors, endocrinologists, and surgeons who serve transgender/gender expansive/gender nonconforming individuals. I am proud to provide letters of support for hormone suppression, hormone replacement therapies and gender confirmation surgeries, when applicable."], ["website", "www.pinerest.org"], ["phone", "616-364-1500"], ["created_at", "2023-01-26 01:00:29.829508"], ["updated_at", "2023-01-26 01:00:29.829508"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.1ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 2], ["location_id", 4], ["name", "Fusion Consulting & Mental Healthh Services - Jackson Daly, MSCP, LLPC"], ["address", "550 S. Saginaw St. Lapeer, MI 48446"], ["description", "I specialize in anxiety and depression, conflict mediation and resolution, as well as issues related to gender identity and sexual orientation. I have experience working with adolescents and adults as well as individuals and groups experiencing difficulties with stress, self-esteem, identity, relationships, and personal and professional changes. My philosophical orientation is strongly influenced by Rogerian theory and the belief that, through qualities like genuineness, congruency, and positive regard, we can invite change into our lives. With these qualities as a foundation, I would like to encourage you to embrace therapy as a collaborative process; in this way, we can build a unique therapeutic relationship appropriate for your goals."], ["website", "www.fusionmentalhealth.com"], ["created_at", "2023-01-26 01:00:29.830812"], ["updated_at", "2023-01-26 01:00:29.830812"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.1ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 2], ["location_id", 5], ["name", "Wentworth and Ass. - Erin S. Blumberg"], ["address", "11111 Hall Rd #203, Utica, MI 48317"], ["description", "I am a Licensed Professional Counselor with 29 years experience. I was active in Ferndale, where I live, to bring the current non discrimination ordinance into being. I work with any person who has issues... relationship, individual, or sexual without regard to gender orientation or lifestyle choices (kinky, open/poly). As a long time member of the Society for the Scientific Study of Sexuality I have been educated to a considerable degree about the problems faced by those whose physical birth gender does not match their internal sensed self."], ["website", "www.wentworthandassociates.com"], ["created_at", "2023-01-26 01:00:29.832125"], ["updated_at", "2023-01-26 01:00:29.832125"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.1ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 3], ["location_id", 6], ["name", "Grand Rapids Pride Center"], ["address", "343 Atlas Ave SE, Grand Rapids, MI 49506"], ["description", "Our Mission: Empowering Our LGBTQ Community Through Supportive Services and Awareness. Our Vision: Grand Rapids Pride Center aims to be the center of a vibrant and inclusive community that supports all LGBTQ individuals."], ["website", "www.grpride.org"], ["created_at", "2023-01-26 01:00:29.833477"], ["updated_at", "2023-01-26 01:00:29.833477"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.1ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 3], ["location_id", 3], ["name", "OutFront Kalamazoo"], ["address", "340 S. Rose St., Kalamazoo, MI 49007"], ["description", "OutFront Kalamazoo provides programs and services for youth and adults such as peer support groups, social events, educational resources and more. We also organize and mobilize individuals and organizations so that together we may advance social justice and achieve equity and inclusion for the LGBTQ+ community."], ["website", "www.outfrontkzoo.org"], ["created_at", "2023-01-26 01:00:29.834751"], ["updated_at", "2023-01-26 01:00:29.834751"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.1ms)[0m  [1m[32mINSERT INTO "listings" ("identity_id", "service_id", "location_id", "name", "address", "description", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["identity_id", 3], ["service_id", 3], ["location_id", 2], ["name", "Salus Center"], ["address", "408 S Washington Sq., Lansing, MI 48933"], ["description", "Founded in 2017, Salus Center serves Lansing’s LGBTQIA+ communities as a gathering space and information hub. We advocate for the rights of our community members by honoring and affirming the interconnectedness of oppression."], ["website", "www.saluscenter.org"], ["created_at", "2023-01-26 01:00:29.836024"], ["updated_at", "2023-01-26 01:00:29.836024"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Load (0.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Create (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("user_id", "listing_id", "commenttext", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["listing_id", 1], ["commenttext", "lorem ipsum dolor sit amet"], ["created_at", "2023-01-26 01:00:29.843972"], ["updated_at", "2023-01-26 01:00:29.843972"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Load (0.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Create (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("user_id", "listing_id", "commenttext", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["listing_id", 1], ["commenttext", "lorem ipsum dolor sit amet"], ["created_at", "2023-01-26 01:00:29.846399"], ["updated_at", "2023-01-26 01:00:29.846399"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/login" for ::1 at 2023-01-25 20:00:47 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"samuel", "password"=>"[FILTERED]", "session"=>{"username"=>"samuel", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "samuel"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.0ms | Allocations: 6352)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:5:in `create'
+Started POST "/login" for ::1 at 2023-01-25 20:01:01 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"sam", "password"=>"[FILTERED]", "session"=>{"username"=>"sam", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sam"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (13.94ms)
+Completed 200 OK in 50ms (Views: 19.7ms | ActiveRecord: 1.5ms | Allocations: 15085)
+
+
+Started POST "/login/" for ::1 at 2023-01-25 20:02:03 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"samuel", "password"=>"[FILTERED]", "session"=>{"username"=>"samuel", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "samuel"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1003)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:5:in `create'
+Started POST "/login/" for ::1 at 2023-01-25 20:02:06 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"sam", "password"=>"[FILTERED]", "session"=>{"username"=>"sam", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sam"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.48ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.4ms | Allocations: 2768)
+
+
+Started POST "/login/" for ::1 at 2023-01-25 20:04:16 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"sam", "password"=>"[FILTERED]", "session"=>{"username"=>"sam", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sam"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers]   [1m[36mBookmark Load (0.8ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers]   [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (13.69ms)
+Completed 200 OK in 31ms (Views: 15.9ms | ActiveRecord: 2.3ms | Allocations: 20483)
+
+
+Started POST "/login/" for ::1 at 2023-01-25 20:06:11 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"sam", "password"=>"[FILTERED]", "session"=>{"username"=>"sam", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sam"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers]   [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (17.78ms)
+Completed 200 OK in 30ms (Views: 19.7ms | ActiveRecord: 1.5ms | Allocations: 20482)
+
+
+Started POST "/login/" for ::1 at 2023-01-25 20:08:42 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"sam", "password"=>"[FILTERED]", "session"=>{"username"=>"sam", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sam"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers]   [1m[36mBookmark Load (0.3ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.03ms)
+Completed 200 OK in 12ms (Views: 7.3ms | ActiveRecord: 1.1ms | Allocations: 2773)
+
+
+Started POST "/login/" for ::1 at 2023-01-25 20:09:02 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"jdshlajfs", "password"=>"[FILTERED]", "session"=>{"username"=>"jdshlajfs", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "jdshlajfs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1037)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:5:in `create'
+Started POST "/login/" for ::1 at 2023-01-25 20:10:36 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"jdshlajfs", "password"=>"[FILTERED]", "session"=>{"username"=>"jdshlajfs", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "jdshlajfs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms | Allocations: 1022)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:5:in `create'
+Started POST "/login/" for ::1 at 2023-01-25 20:11:35 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"kjahslfj", "password"=>"[FILTERED]", "session"=>{"username"=>"kjahslfj", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kjahslfj"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1003)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:5:in `create'
+Started POST "/login/" for ::1 at 2023-01-25 20:11:46 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"kjahslfj", "password"=>"[FILTERED]", "session"=>{"username"=>"kjahslfj", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kjahslfj"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms | Allocations: 1002)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:5:in `create'
+Started POST "/login/" for ::1 at 2023-01-25 20:11:47 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"kjahslfj", "password"=>"[FILTERED]", "session"=>{"username"=>"kjahslfj", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kjahslfj"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1022)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:5:in `create'
+Started POST "/login/" for ::1 at 2023-01-25 20:12:45 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"ajhsdlfjs", "password"=>"[FILTERED]", "session"=>{"username"=>"ajhsdlfjs", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "ajhsdlfjs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1002)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:5:in `create'
+Started POST "/login/" for ::1 at 2023-01-25 20:12:54 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"ajhsdlfjs", "password"=>"[FILTERED]", "session"=>{"username"=>"ajhsdlfjs", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "ajhsdlfjs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1002)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:5:in `create'
+Started POST "/login/" for ::1 at 2023-01-25 20:13:03 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"ajhsdlfjs", "password"=>"[FILTERED]", "session"=>{"username"=>"ajhsdlfjs", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "ajhsdlfjs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1002)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:5:in `create'
+Started POST "/login/" for ::1 at 2023-01-25 20:13:11 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"sam1", "password"=>"[FILTERED]", "session"=>{"username"=>"sam1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sam1"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1002)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:5:in `create'
+Started POST "/login/" for ::1 at 2023-01-25 20:13:15 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"sam", "password"=>"[FILTERED]", "session"=>{"username"=>"sam", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sam"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers]   [1m[36mBookmark Load (0.2ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.38ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.6ms | Allocations: 2749)
+
+
