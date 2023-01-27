@@ -1,7 +1,7 @@
 import React from "react";
 import Listing from "./Listing";
 
-function ListingContainer({ searchText, listings }) {
+function ListingContainer({ searchText, listings, loginState, currentUser }) {
     let listingCards = listings.map((listing) => {
         return (
             <Listing 
@@ -13,6 +13,9 @@ function ListingContainer({ searchText, listings }) {
                 website={listing.website}
                 phone={listing.phone}
                 comments={listing.comments}
+
+                loginState={loginState}
+                currentUser={currentUser}
             />
         )
     })

@@ -30,7 +30,7 @@ function LoginUI({ setCurrentUser, loginState, setLoginState, displayLoginUI }) 
         })
         .then((res) => {
             if (res.ok) {
-                setCurrentUser(res.json());
+                setCurrentUser(user);
                 setLoginState(true);
                 displayLoginUI();
             } else {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Comment from "./Comment";
 
-function Listing({ name, address, description, website, phone, comments }) {
+function Listing({ name, address, description, website, phone, comments, loginState, currentUser }) {
     const [shown, toggleShown] = useState(false);
 
     let commentCards = comments.map((comment) => {
@@ -13,6 +13,8 @@ function Listing({ name, address, description, website, phone, comments }) {
                 listing_id={comment.listing_id}
                 commenttext={comment.commenttext}
                 author={comment.author}
+
+                currentUser={currentUser}
             />
         )
     })
@@ -32,6 +34,7 @@ function Listing({ name, address, description, website, phone, comments }) {
         <div id='listingcommentcontainer'>
             {commentCards}
         </div>
+        {loginState ? 'Leave a comment' : 'You must be logged in to leave a comment.'}
     </div>
 
     function toggleExpandView() {

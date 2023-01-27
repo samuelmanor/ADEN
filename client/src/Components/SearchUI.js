@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ListingContainer from "./ListingContainer";
 
-function SearchUI() {
+function SearchUI({ loginState, currentUser }) {
     const [searchObj, setSearchObj] = useState({identity: 0, service: 0, location: 0});
     const [searchText, setSearchText] = useState(['', '', '']);
     const [listings, setListings] = useState([]);
@@ -90,7 +90,7 @@ function SearchUI() {
                     </select>
                 </form>
 
-                <ListingContainer searchText={searchText} listings={listings} />
+                <ListingContainer searchText={searchText} listings={listings} loginState={loginState} currentUser={currentUser} />
         </div>
     )
 }
