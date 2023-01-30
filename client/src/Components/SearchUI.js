@@ -30,7 +30,6 @@ function SearchUI({ loginState, currentUser }) {
     useEffect(() => {
         if (Object.values(searchObj).every(p => p)) {
             getListings();
-            // getText(); could go here?
             scrollToResults();
         } else {
             console.log('listings', listings)
