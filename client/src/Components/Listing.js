@@ -23,6 +23,7 @@ function Listing({ name, address, description, website, phone, comments, loginSt
         <h1 id='x' onClick={toggleExpandView}>x</h1>
         <h2>{name}</h2>
         <h3>{address}</h3>
+
         <div id='listingdesc'>
             <p>{description}</p>
             <div>
@@ -30,10 +31,12 @@ function Listing({ name, address, description, website, phone, comments, loginSt
                 <h3>{phone}</h3>
             </div>
         </div>
+        
         <h3>comments:</h3>
         <div id='listingcommentcontainer'>
             {commentCards}
         </div>
+
         {loginState ? 'Leave a comment' : 'You must be logged in to leave a comment.'}
     </div>
 
