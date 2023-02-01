@@ -26,12 +26,13 @@ function Listing({ name, address, description, website, phone, comments, loginSt
 
         <div id='listingdesc'>
             <p>{description}</p>
+            
             <div>
                 <h3><a href={'http://' + website}>website</a></h3>
                 <h3>{phone}</h3>
             </div>
         </div>
-        
+
         <h3>comments:</h3>
         <div id='listingcommentcontainer'>
             {commentCards}
@@ -59,6 +60,7 @@ function Listing({ name, address, description, website, phone, comments, loginSt
             <h2 onClick={toggleExpandView}>{name}</h2>
             <h3>{address}</h3>
             <p>{description}</p>
+
             <p className='commentlabel'>{comments.length} comment{comments.length > 1 || comments.length === 0 ? 's' : null}</p>
 
             {large}
