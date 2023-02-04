@@ -7,6 +7,7 @@ function Header({ setCurrentUser, loginState, setLoginState }) {
     function displayLoginUI() {
         toggleShowLoginUI((showLoginUI) => (!showLoginUI));
     }
+    
     return (
         <div id='header'>
             <div className='headertab'>about</div>
