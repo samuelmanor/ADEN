@@ -3,6 +3,7 @@ import Comment from "./Comment";
 
 function Listing({ name, address, description, website, phone, comments, loginState, currentUser }) {
     const [shown, toggleShown] = useState(false);
+    const [commentsArray, setCommentsArray] = useState(comments); // for adding/removing comments
 
     let commentCards = comments.map((comment) => {
         return (
@@ -26,7 +27,7 @@ function Listing({ name, address, description, website, phone, comments, loginSt
 
         <div id='listingdesc'>
             <p>{description}</p>
-            
+
             <div>
                 <h3><a href={'http://' + website}>website</a></h3>
                 <h3>{phone}</h3>
