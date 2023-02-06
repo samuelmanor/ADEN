@@ -5,6 +5,14 @@ function Listing({ name, address, description, website, phone, comments, loginSt
     const [shown, toggleShown] = useState(false);
     const [commentsArray, setCommentsArray] = useState(comments); // for adding/removing comments
 
+    function addComment() {
+
+    }
+
+    function deleteComment() {
+
+    }
+
     let commentCards = comments.map((comment) => {
         return (
             <Comment 
@@ -16,6 +24,9 @@ function Listing({ name, address, description, website, phone, comments, loginSt
                 author={comment.author}
 
                 currentUser={currentUser}
+
+                addComment={addComment}
+                deleteComment={deleteComment}
             />
         )
     })
