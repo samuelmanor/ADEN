@@ -4,6 +4,7 @@ import Comment from "./Comment";
 function Listing({ name, address, description, website, phone, comments, loginState, currentUser }) {
     const [shown, toggleShown] = useState(false);
     const [commentsArray, setCommentsArray] = useState(comments); // for adding/removing comments
+    const [commentText, setCommentText] = useState("");
 
     function addComment() {
 
@@ -31,6 +32,14 @@ function Listing({ name, address, description, website, phone, comments, loginSt
         )
     })
 
+    const commentForm = <div className='commentform'>
+        <p>Leave a comment:</p>
+        <form onSubmit={handleSubmitComment}>
+            <textarea name='comment' placeholder='type your comment here' value={commentText} onChange={(e) => setCommentText(e.target.value)} />
+            <button type='submit'>post</button>
+        </form>
+    </div>
+
     const large = <div id='listinglarge' className='hiddenlisting'> 
         <h1 id='x' onClick={toggleExpandView}>x</h1>
         <h2>{name}</h2>
@@ -50,7 +59,7 @@ function Listing({ name, address, description, website, phone, comments, loginSt
             {commentCards}
         </div>
 
-        {loginState ? 'Leave a comment' : 'You must be logged in to leave a comment.'}
+        {loginState ? commentForm : 'You must be logged in to leave a comment.'}
     </div>
 
     function toggleExpandView() {
