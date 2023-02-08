@@ -4,7 +4,7 @@ import Comment from "./Comment";
 function Listing({ name, address, description, website, phone, comments, loginState, currentUser }) {
     const [shown, toggleShown] = useState(false);
     const [commentsArray, setCommentsArray] = useState(comments); // for adding/removing comments
-    const [commentText, setCommentText] = useState("");
+    const [inputText, setInputText] = useState("");
 
     function addComment() {
 
@@ -35,7 +35,7 @@ function Listing({ name, address, description, website, phone, comments, loginSt
     const commentForm = <div className='commentform'>
         <p>Leave a comment:</p>
         <form onSubmit={handleSubmitComment}>
-            <textarea name='comment' placeholder='type your comment here' value={commentText} onChange={(e) => setCommentText(e.target.value)} />
+            <textarea name='comment' placeholder='type your comment here' value={inputText} onChange={(e) => setInputText(e.target.value)} />
             <button type='submit'>post</button>
         </form>
     </div>
