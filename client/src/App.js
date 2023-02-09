@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     fetch('http://localhost:3000/me/').then((res) => {
       if (res.ok) {
-        res.json().then((user) => setCurrentUser(user))
+        res.json().then((user) => setCurrentUser(user)) // to fix: make index route for sessions
       }
     });
   }, []);
@@ -20,6 +20,7 @@ function App() {
     <div className="App">
       <Header setCurrentUser={setCurrentUser} loginState={loginState} setLoginState={setLoginState} />
       <SearchUI loginState={loginState} currentUser={currentUser} />
+      <p onClick={console.log(loginState)}>loginstate ?</p>
     </div>
   );
 }

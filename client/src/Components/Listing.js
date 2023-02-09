@@ -10,11 +10,7 @@ function Listing({ name, address, description, website, phone, comments, loginSt
 
     }
 
-    function deleteComment() {
-
-    }
-
-    let commentCards = comments.map((comment) => {
+    let commentCards = commentsArray.map((comment) => {
         return (
             <Comment 
                 key={comment.id}
@@ -25,16 +21,13 @@ function Listing({ name, address, description, website, phone, comments, loginSt
                 author={comment.author}
 
                 currentUser={currentUser}
-
-                addComment={addComment}
-                deleteComment={deleteComment}
             />
         )
     })
 
     const commentForm = <div className='commentform'>
         <p>Leave a comment:</p>
-        <form onSubmit={handleSubmitComment}>
+        <form onSubmit={addComment}>
             <textarea name='comment' placeholder='type your comment here' value={inputText} onChange={(e) => setInputText(e.target.value)} />
             <button type='submit'>post</button>
         </form>
