@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     fetch('http://localhost:3000/me/').then((res) => {
       if (res.ok) {
-        res.json().then((user) => setCurrentUser(user)) // to fix: make index route for sessions
+        res.json().then((user) => setCurrentUser(user)) // to fix: make index route for sessions to fix 401 error
       }
     });
   }, []);

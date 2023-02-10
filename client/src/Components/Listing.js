@@ -3,11 +3,13 @@ import Comment from "./Comment";
 
 function Listing({ name, address, description, website, phone, comments, loginState, currentUser }) {
     const [shown, toggleShown] = useState(false);
-    const [commentsArray, setCommentsArray] = useState(comments); // for adding/removing comments
+    const [commentsArray, setCommentsArray] = useState(comments);
     const [inputText, setInputText] = useState("");
 
-    function addComment() {
-
+    function addComment(newComment) {
+        e.preventDefault();
+        const updatedCommentsArray = [...commentsArray, newComment];
+        setCommentsArray(updatedCommentsArray);
     }
 
     let commentCards = commentsArray.map((comment) => {
