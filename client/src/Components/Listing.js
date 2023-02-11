@@ -12,6 +12,11 @@ function Listing({ name, address, description, website, phone, comments, loginSt
         setCommentsArray(updatedCommentsArray);
     }
 
+    function delComment() {
+        const updatedCommentsArray = commentsArray.filter((comment) => comment.id !== commentToDelete.id);
+        setCommentsArray(updatedCommentsArray);
+    }
+
     let commentCards = commentsArray.map((comment) => {
         return (
             <Comment 
@@ -23,6 +28,7 @@ function Listing({ name, address, description, website, phone, comments, loginSt
                 author={comment.author}
 
                 currentUser={currentUser}
+                delComment={delComment}
             />
         )
     })
@@ -54,7 +60,7 @@ function Listing({ name, address, description, website, phone, comments, loginSt
             {commentCards}
         </div>
 
-        {loginState ? commentForm : 'You must be logged in to leave a comment.'}
+        {loginState ? commentForm : <p>You must be logged in to leave a comment.</p>}
     </div>
 
     function toggleExpandView() {

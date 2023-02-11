@@ -1,9 +1,10 @@
 import React from "react";
 
-function Comment({ id, user_id, listing_id, commenttext, author, currentUser }) {
+function Comment({ id, user_id, listing_id, commenttext, author, currentUser, updateCommentArray }) {
 
-    function delComment() {
+    function deleteComment() {
         console.log('clicked del on', listing_id);
+        updateCommentArray();
     }
 
     return (
@@ -11,7 +12,7 @@ function Comment({ id, user_id, listing_id, commenttext, author, currentUser }) 
             <h4>{author}</h4>
             <p>{commenttext}</p>
 
-            {author == currentUser.username ? <button onClick={delComment}>x</button> : null}
+            {author == currentUser.username ? <button onClick={deleteComment}>x</button> : null}
         </div>
     )
 }
