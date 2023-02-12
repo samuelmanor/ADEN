@@ -8,12 +8,15 @@ function Listing({ name, address, description, website, phone, comments, loginSt
 
     function addComment(newComment) {
         e.preventDefault();
+
+        // fetch post /comments
+        
         const updatedCommentsArray = [...commentsArray, newComment];
         setCommentsArray(updatedCommentsArray);
     }
 
-    function delComment() {
-        const updatedCommentsArray = commentsArray.filter((comment) => comment.id !== commentToDelete.id);
+    function delComment(selCommentId) {
+        const updatedCommentsArray = commentsArray.filter((comment) => comment.id !== selCommentId);
         setCommentsArray(updatedCommentsArray);
     }
 
