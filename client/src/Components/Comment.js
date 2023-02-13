@@ -1,10 +1,10 @@
 import React from "react";
 
-function Comment({ id, user_id, listing_id, commenttext, author, currentUser, delComment }) {
+function Comment({ id, listing_id, commenttext, author, currentUser, delComment }) {
 
     function deleteComment() {
         delComment(id);
-        fetch(`http://localhost:3000/comments/${id}`, {
+        fetch(`http://localhost:3000/comments/${listing_id}`, {
             method: 'DELETE',
         })
         .then((r) => console.log(r))

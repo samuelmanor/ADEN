@@ -10,7 +10,7 @@ function Listing({ name, address, description, website, phone, comments, loginSt
         e.preventDefault();
 
         // fetch post /comments
-        
+
         const updatedCommentsArray = [...commentsArray, newComment];
         setCommentsArray(updatedCommentsArray);
     }
@@ -25,7 +25,6 @@ function Listing({ name, address, description, website, phone, comments, loginSt
             <Comment 
                 key={comment.id}
                 id={comment.id}
-                user_id={comment.user_id}
                 listing_id={comment.listing_id}
                 commenttext={comment.commenttext}
                 author={comment.author}
