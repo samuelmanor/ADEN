@@ -39,6 +39,7 @@ function Listing({ name, address, description, website, phone, comments, loginSt
         <p>Leave a comment:</p>
         <form onSubmit={addComment}>
             <textarea name='comment' placeholder='type your comment here' value={inputText} onChange={(e) => setInputText(e.target.value)} />
+
             <button type='submit'>post</button>
         </form>
     </div>
@@ -67,7 +68,6 @@ function Listing({ name, address, description, website, phone, comments, loginSt
 
     function toggleExpandView() {
         toggleShown((shown) => (!shown));
-
         const box = document.getElementById('listinglarge');
 
         if (shown) {
