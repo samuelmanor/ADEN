@@ -8,7 +8,6 @@ function Listing({ name, address, description, website, phone, comments, loginSt
 
     function addComment(newComment) {
         e.preventDefault();
-
         // fetch post /comments
 
         const updatedCommentsArray = [...commentsArray, newComment];
