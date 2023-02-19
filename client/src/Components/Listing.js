@@ -8,7 +8,6 @@ function Listing({ name, address, description, website, phone, comments, loginSt
 
     function addComment(newComment) {
         e.preventDefault();
-        
         // fetch post /comments
 
         const updatedCommentsArray = [...commentsArray, newComment];
@@ -18,6 +17,19 @@ function Listing({ name, address, description, website, phone, comments, loginSt
     function delComment(selCommentId) {
         const updatedCommentsArray = commentsArray.filter((comment) => comment.id !== selCommentId);
         setCommentsArray(updatedCommentsArray);
+    }
+
+    function toggleExpandView() {
+        toggleShown((shown) => (!shown));
+        const box = document.getElementById('listinglarge');
+
+        if (shown) {
+            box.className = '';
+            document.body.style.overflow = 'hidden';
+        } else {
+            box.className = 'hiddenlisting';
+            document.body.style.overflow = '';
+        }
     }
 
     let commentCards = commentsArray.map((comment) => {
@@ -65,19 +77,6 @@ function Listing({ name, address, description, website, phone, comments, loginSt
 
         {loginState ? commentForm : <p>You must be logged in to leave a comment.</p>}
     </div>
-
-    function toggleExpandView() {
-        toggleShown((shown) => (!shown));
-        const box = document.getElementById('listinglarge');
-
-        if (shown) {
-            box.className = '';
-            document.body.style.overflow = 'hidden';
-        } else {
-            box.className = 'hiddenlisting';
-            document.body.style.overflow = '';
-        }
-    }
 
     return (
         <div id='listingsmall'>
