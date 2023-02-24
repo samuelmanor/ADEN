@@ -20,22 +20,17 @@ function SearchUI({ loginState, currentUser }) {
         const sersel = document.getElementById('service');
         const locsel = document.getElementById('location');
 
+        // setSearchText([
+        //     idsel.options[idsel.selectedIndex].text,
+        //     sersel.options[sersel.selectedIndex].text,
+        //     locsel.options[locsel.selectedIndex].text
+        // ])
         setSearchText([
-            idsel.options[idsel.selectedIndex].text,
-            sersel.options[sersel.selectedIndex].text,
-            locsel.options[locsel.selectedIndex].text
-        ])
+            document.getElementById('identity'),
+            document.getElementById('service'),
+            document.getElementById('location')
+        ]);
     }
-
-    useEffect(() => {
-        if (Object.values(searchObj).every(p => p)) {
-            getListings();
-            scrollToResults();
-        } else {
-            console.log('listings', listings)
-            console.log('invalid', searchObj);
-        }
-    }, [searchObj])
 
     function correctSelectStyle(e) {
         e.target.className = 'selected';
@@ -54,6 +49,16 @@ function SearchUI({ loginState, currentUser }) {
         query[e.target.id] = parseInt(e.currentTarget.value);
         setSearchObj(query);
     }
+
+    useEffect(() => {
+        if (Object.values(searchObj).every(p => p)) {
+            getListings();
+            scrollToResults();
+        } else {
+            console.log('listings', listings)
+            console.log('invalid', searchObj);
+        }
+    }, [searchObj])
 
     return (
         <div id='searchbox'>
