@@ -16,9 +16,9 @@ function SearchUI({ loginState, currentUser }) {
     }
 
     function getText() {
-        const idsel = document.getElementById('identity');
-        const sersel = document.getElementById('service');
-        const locsel = document.getElementById('location');
+        // const idsel = document.getElementById('identity');
+        // const sersel = document.getElementById('service');
+        // const locsel = document.getElementById('location');
 
         // setSearchText([
         //     idsel.options[idsel.selectedIndex].text,
