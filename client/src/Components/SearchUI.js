@@ -55,8 +55,8 @@ function SearchUI({ loginState, currentUser }) {
             getListings();
             scrollToResults();
         } else {
-            console.log('listings', listings)
-            console.log('invalid', searchObj);
+            // console.log('listings', listings)
+            // console.log('invalid', searchObj);
         }
     }, [searchObj])
 
