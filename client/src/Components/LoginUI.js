@@ -10,7 +10,7 @@ function LoginUI({ setCurrentUser, loginState, setLoginState, displayLoginUI }) 
         loginbtn.innerText = 'Wrong user or pass!';
         setTimeout(function() {
             loginbtn.innerText = 'log in';
-        }, 3000);
+        }, 3000); // find a better way to do this?
     }
 
     function handleLogin(e) {
